@@ -1,2 +1,59 @@
-/* 1. Скачиваем все неоходимые шрифты с сайта https://webfonts.pro в папку src/fonts */
-/* 2. В файл font.scss подключаем нужные нам шрифты с помощью директивы @font-face под каждое начертание шрифта с точным указанием пути к скаченному шрифту */
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../font/Commissioner-Thin.eot');
+  src: local('Commissioner Thin'), local('Commissioner-Thin'),
+    url('../font/Commissioner-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../font/Commissioner-Thin.woff2') format('woff2'),
+    url('../font/Commissioner-Thin.woff') format('woff'),
+    url('../font/Commissioner-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../font/Commissioner-Light.eot');
+  src: local('Commissioner Light'), local('Commissioner-Light'),
+    url('../font/Commissioner-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Commissioner-Light.woff2') format('woff2'),
+    url('../font/Commissioner-Light.woff') format('woff'),
+    url('../font/Commissioner-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../font/Commissioner-Medium.eot');
+  src: local('Commissioner Medium'), local('Commissioner-Medium'),
+    url('../font/Commissioner-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/Commissioner-Medium.woff2') format('woff2'),
+    url('../font/Commissioner-Medium.woff') format('woff'),
+    url('../font/Commissioner-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../font/Commissioner-Bold.eot');
+  src: local('Commissioner Bold'), local('Commissioner-Bold'),
+    url('../font/Commissioner-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Commissioner-Bold.woff2') format('woff2'),
+    url('../font/Commissioner-Bold.woff') format('woff'),
+    url('../font/Commissioner-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Commissioner';
+  src: url('../font/Commissioner-Black.eot');
+  src: local('Commissioner Black'), local('Commissioner-Black'),
+    url('../font/Commissioner-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/Commissioner-Black.woff2') format('woff2'),
+    url('../font/Commissioner-Black.woff') format('woff'),
+    url('../font/Commissioner-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
