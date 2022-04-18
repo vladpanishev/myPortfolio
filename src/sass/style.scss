@@ -1,9 +1,11 @@
+@import 'base/variables';
+
 * {
-  font-family: 'Commissioner', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.body {
-  background-color: #e7e2da;
+body {
+  background-color: #eae7dc;
 }
 
 .container {
@@ -12,3 +14,7 @@
   width: 100%;
   padding: 0 15px;
 }
+
+@import 'blocks/header';
+@import 'blocks/social';
+@import 'blocks/promo';

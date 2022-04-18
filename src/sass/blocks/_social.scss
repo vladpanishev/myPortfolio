@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  &__link {
+    margin-right: 15px;
+    i {
+      font-size: 30px;
+      color: #fff;
+      transition: 0.1s all;
+      &:hover {
+        color: $red-color;
+      }
+    }
+  }
+}
