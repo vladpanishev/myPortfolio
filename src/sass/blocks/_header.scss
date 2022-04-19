@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 80px;
+  height: 70px;
   padding-top: 20px;
   background-color: $black-color;
   &__inner {
@@ -14,20 +14,17 @@
     font-size: 50px;
     line-height: 30px;
     font-weight: 900;
-    color: #ffffff;
+    color: $grey-color;
     transition: 0.1s all;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 40px;
-      left: 0;
-      display: block;
-      height: 5px;
-      width: 100%;
-      background-color: $red-color;
-    }
-    &:hover {
-      color: $red-color;
+    &--animated {
+      &:hover {
+        animation-play-state: running;
+        animation-iteration-count: 1;
+        animation-name: headShake;
+        color: $grey-color;
+        animation-duration: 0.8s;
+        animation-timing-function: linear;
+      }
     }
   }
   &__nav {
@@ -41,7 +38,7 @@
     font-weight: 700;
     line-height: 20px;
     margin-right: 20px;
-    color: #fff;
+    color: $grey-color;
     &::before {
       content: '';
       position: absolute;
@@ -50,11 +47,11 @@
       display: block;
       height: 4px;
       width: 0%;
-      background-color: $red-color;
+      background-color: $grey-color;
       transition: 0.2s all;
     }
     &:hover {
-      color: #ffffff;
+      color: $grey-color;
       &::before {
         width: 100%;
       }

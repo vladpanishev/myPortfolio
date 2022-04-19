@@ -1,12 +1,12 @@
 .promo {
   &__inner {
-    margin-top: 20px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   &__text {
-    width: 600px;
+    width: 543px;
   }
   &__title {
     margin-bottom: 20px;
@@ -15,17 +15,19 @@
     line-height: 60px;
   }
   &__descr {
-    margin-top: 20px;
+    margin: 20px 0 50px;
+    color: #41413f;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30px;
     span {
       display: block;
+      background-color: $black-color;
       text-transform: uppercase;
-      line-height: 27px;
+      line-height: 45px;
       font-size: 40px;
       font-weight: 900;
-      color: $red-color;
+      color: #fff;
     }
   }
 }

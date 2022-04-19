@@ -1,11 +1,8 @@
 @import 'base/variables';
+@import 'base/animation';
 
 * {
   font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  background-color: #eae7dc;
 }
 
 .container {
@@ -18,3 +15,4 @@ body {
 @import 'blocks/header';
 @import 'blocks/social';
 @import 'blocks/promo';
+@import 'blocks/btn';
