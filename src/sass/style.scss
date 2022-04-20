@@ -1,5 +1,6 @@
 @import 'base/variables';
 @import 'base/animation';
+@import 'base/mixins';
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -16,3 +17,4 @@
 @import 'blocks/social';
 @import 'blocks/promo';
 @import 'blocks/btn';
+@import 'blocks/about';

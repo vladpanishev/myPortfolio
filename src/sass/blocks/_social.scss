@@ -3,13 +3,12 @@
   justify-content: space-between;
   &__link {
     margin-right: 15px;
-    i {
-      font-size: 30px;
-      color: $grey-color;
-      transition: 0.1s all;
-    }
+    font-size: 30px;
+    color: #fff;
+    transition: 0.1s all;
     &--animated {
       &:hover {
+        color: $grey-color;
         animation-name: zoomx2;
         animation-play-state: running;
         animation-iteration-count: 1;
