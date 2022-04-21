@@ -1,0 +1,6 @@
+.portfolio {
+  padding: 30px;
+  &__title {
+    @include main-title;
+  }
+}
