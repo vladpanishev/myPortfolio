@@ -15,9 +15,9 @@
     line-height: 54px;
   }
   &__descr {
-    margin: 20px 0 50px;
+    margin: 12px 0;
     color: #41413f;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     span {
@@ -30,6 +30,17 @@
       width: 505px;
       color: $grey-color;
       background-color: $black-color;
+    }
+  }
+  &__list {
+    margin-bottom: 50px;
+    li {
+      font-weight: 300;
+      list-style-type: none;
+      font-size: 18px;
+      i {
+        color: $black-color;
+      }
     }
   }
   &__img {

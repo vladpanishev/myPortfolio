@@ -1,11 +1,12 @@
 .about {
+  min-height: 700px;
   padding: 35px 0;
-  background: url(../../img/bg.png);
+  background: url(../img/bg.png) no-repeat;
   &__title {
     @include main-title;
     width: 192px;
     transform: rotate(-3.5deg);
-    margin-top: 71px;
+    margin-top: 80px;
     margin-bottom: 20px;
   }
   &__inner {
@@ -24,5 +25,10 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+  }
+  &__img {
+    img {
+      transform: translateX(64px) translateY(33px) rotate(356deg);
+    }
   }
 }
