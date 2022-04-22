@@ -10,15 +10,18 @@
   }
   &__logo {
     display: block;
+    background-color: $black-color;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    line-height: 38px;
-    font-size: 45px;
-    width: 255px;
+    line-height: 43px;
+    font-size: 43px;
+    width: 252px;
     color: #fff;
+    transition: 0.2s all;
     &:hover {
       color: $grey-color;
+      box-shadow: 0 0 0 1px #f4ede2, 0 0 0 1px;
     }
   }
   &__nav {
@@ -28,8 +31,8 @@
   }
   &__nav-link {
     position: relative;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 20px;
     margin-right: 20px;
     color: #fff;
@@ -39,14 +42,14 @@
       top: 25px;
       left: 0;
       display: block;
-      border-radius: 3px;
-      height: 4px;
+      height: 2px;
+      border-radius: 1px;
       width: 0%;
       background-color: $grey-color;
       transition: 0.2s all;
     }
     &:hover {
-      color: #fff;
+      color: $grey-color;
       &::before {
         width: 100%;
       }

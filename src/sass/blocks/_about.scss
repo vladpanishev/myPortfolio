@@ -1,32 +1,44 @@
 .about {
   min-height: 560px;
-  padding: 35px 130px;
+  padding: 20px 130px;
   background-color: $black-color;
   &__title {
     @include main-title;
-    width: 192px;
-    transform: translateX(170px) translateY(25px);
+    width: 170px;
+    transform: translateX(200px) translateY(30px);
   }
+
   &__inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    align-items: center;
+    margin-top: 35px;
   }
   &__text {
+    background-color: #323436;
+    padding: 15px;
+    box-shadow: 0 -0px 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
     color: #fff;
     width: 630px;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 30px;
+    p {
+      font-family: 'TildaSans', sans-serif;
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
   }
   &__photo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(35px);
   }
   &__img {
     img {
-      transform: translateX(-120px) translateY(33px) rotate(356deg);
+      transform: translateX(-120px) translateY(33px) rotate(-3deg);
     }
   }
   &__github {
