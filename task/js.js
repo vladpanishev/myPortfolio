@@ -9,6 +9,7 @@ const plumber = require('gulp-plumber'); // Перехват ошибок и б�
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
 const babel = require('gulp-babel'); // babel - позволяет использовать все последние возможности JavaScript
 const uglify = require('gulp-uglify'); // минифицирует/сжимает JavaScript-код
+const rename = require('gulp-rename'); // Переименование файлов
 
 // Обработка JavaScript
 const js = () => {
@@ -22,6 +23,7 @@ const js = () => {
       })
     )
     .pipe(babel())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(dest(path.js.dest, { sourcemaps: app.isDev }));
 };

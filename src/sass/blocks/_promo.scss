@@ -8,6 +8,9 @@
   }
   &__text {
     width: 529px;
+    img {
+      transform: translateX(158px) translateY(-14px) rotate(3deg);
+    }
   }
   &__title {
     font-size: 50px;

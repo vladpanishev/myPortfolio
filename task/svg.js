@@ -7,26 +7,21 @@ const app = require('../config/app.js');
 // Плагины
 const plumber = require('gulp-plumber'); // Перехват ошибок и более наглядный их вывод
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
-const pugs = require('gulp-pug'); // Шаблонизатор HTML
-const webpHtml = require('gulp-webp-html'); // Автоматически оборачивает изображения в конструкцию picture
-const prettyHtml = require('gulp-pretty-html'); // Убирает минификацию и разворачивает код
+const svgSprite = require('gulp-svg-sprite'); // создание SVG спрайтов
 
-// Обработка PUG
-const pug = () => {
-  return src(path.pug.src)
+// Обработка img
+const svg = () => {
+  return src(path.svg.src)
     .pipe(
       plumber({
         errorHandler: notify.onError((error) => ({
-          title: 'Pug',
+          title: 'SVG',
           message: error.message,
         })),
       })
     )
-
-    .pipe(pugs(app.pug))
-    .pipe(webpHtml())
-    .pipe(prettyHtml())
-    .pipe(dest(path.pug.dest));
+    .pipe(svgSprite(app.svgSprite))
+    .pipe(dest(path.img.dest));
 };
 
-module.exports = pug;
+module.exports = svg;

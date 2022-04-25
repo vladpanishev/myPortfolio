@@ -9,8 +9,12 @@ module.exports = {
     verbose: true,
   },
 
-  pug: {
-    pretty: true,
+  svgSprite: {
+    mode: {
+      stack: {
+        sprite: `../sprite.svg`,
+      },
+    },
   },
 
   fonter: {

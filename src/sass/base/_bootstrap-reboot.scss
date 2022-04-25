@@ -157,16 +157,13 @@ h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 abbr[title],
 abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -382,7 +379,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type='button']:not(:disabled),

@@ -9,7 +9,7 @@ const plumber = require('gulp-plumber'); // Перехват ошибок и б�
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
 const imagemin = require('gulp-imagemin'); // Минификация изображений
 const newer = require('gulp-newer'); // Обробатывает только те изображения, которые ещё небыли сжаты
-const webp = require('gulp-webp'); // Конвертация изображений в формат webp
+const webp = require('gulp-webp'); // Конвертирование изображений в формат webp
 
 // Обработка img
 const img = () => {
@@ -17,7 +17,7 @@ const img = () => {
     .pipe(
       plumber({
         errorHandler: notify.onError((error) => ({
-          title: 'img',
+          title: 'IMG',
           message: error.message,
         })),
       })

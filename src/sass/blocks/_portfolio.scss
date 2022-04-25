@@ -6,4 +6,24 @@
     width: 230px;
     margin: 0 auto;
   }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 20px 16px -16px rgba(0, 0, 0, 0.6);
+    transition: 0.2s all;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  i {
+    margin: 0 40px;
+    color: #fff;
+    font-size: 35px;
+  }
 }

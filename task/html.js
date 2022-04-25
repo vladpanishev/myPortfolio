@@ -8,7 +8,6 @@ const app = require('../config/app.js');
 const plumber = require('gulp-plumber'); // Перехват ошибок и более наглядный их вывод
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
 const fileInclude = require('gulp-file-include'); // Подключение шаблонов @@include
-const webpHtml = require('gulp-webp-html'); // Автоматически оборачивает изображения в конструкцию picture
 
 // Обработка HTML
 const html = (cb) => {
@@ -22,7 +21,6 @@ const html = (cb) => {
       })
     )
     .pipe(fileInclude())
-    .pipe(webpHtml())
     .pipe(dest(path.html.dest));
 };
 
