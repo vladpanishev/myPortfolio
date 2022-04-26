@@ -5,27 +5,25 @@
   &__title {
     @include main-title;
     width: 170px;
-    margin: 0 auto;
+    transform: translateX(-15px) translateY(28px) rotate(-3deg);
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 50px 0 50px;
+    margin: 20px 0;
     transition: 0.3s all;
   }
   &__text {
     padding: 15px;
     background-color: #323436;
     box-shadow: 0 -0px 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
-    color: #fff;
+    color: $grey-color;
     width: 630px;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 30px;
     p {
-      font-family: 'TildaSans', sans-serif;
       &:nth-child(1) {
         margin-bottom: 20px;
       }
@@ -33,13 +31,8 @@
         margin-bottom: 30px;
       }
       i {
-        color: #ff0000;
-        font-size: 12px;
-        margin-left: 3px;
-        transform: translateY(-2px);
-      }
-      .fa-face-meh-blank {
-        color: #fff;
+        color: $grey-color;
+        font-size: 16px;
       }
     }
   }
@@ -50,25 +43,28 @@
     display: block;
     text-align: center;
     color: $black-color;
-    background-color: #fff;
+    background-color: $grey-color;
     text-transform: uppercase;
     font-family: 'TildaSans', sans-serif;
     font-weight: 700;
-    line-height: 24px;
-    font-size: 17px;
-    width: 201px;
+    line-height: 20px;
+    font-size: 15px;
+    width: 186px;
   }
   &__icons {
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
   }
-  &__svg {
+  svg {
     display: block;
     margin-right: 20px;
-    fill: #fff;
-    width: 40px;
-    height: 40px;
+    fill: $grey-color;
+    width: 34px;
+    height: 30px;
+    &:nth-child(1) {
+      transform: translateX(2px);
+    }
     &:nth-child(2) {
       transform: scale(1.15);
     }
@@ -81,10 +77,12 @@
   &__photo {
     display: flex;
     flex-direction: column;
-    align-items: center;
     transform: translateY(35px);
   }
   &__img {
-    transform: translateX(-120px) translateY(5px) rotate(-3deg);
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    transform: translateX(8px) translateY(-3px) rotate(-3deg);
   }
 }
