@@ -1,0 +1,36 @@
+.title {
+  display: block;
+  text-align: center;
+  color: $black-color;
+  background-color: $grey-color;
+  text-transform: uppercase;
+  font-family: $second-font;
+  font-weight: 900;
+  line-height: 34px;
+  font-size: 30px;
+  &__about {
+    width: 170px;
+    transform: translateX(-15px) translateY(28px) rotate(-3deg);
+  }
+  &__stack {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 15px;
+    width: 186px;
+  }
+  &__result {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 20px;
+    width: 315px;
+  }
+  &__portfolio {
+    width: 230px;
+    margin: 0 auto;
+  }
+}

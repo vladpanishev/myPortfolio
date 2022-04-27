@@ -1,0 +1,23 @@
+.btn {
+  background: #313335;
+  position: relative;
+  display: block;
+  height: 50px;
+  background-color: $black-color;
+  font-weight: 500;
+  font-family: $second-font;
+  text-transform: uppercase;
+  color: #fff;
+  top: 0;
+  left: 0;
+  transition: 0.2s all;
+  &:hover {
+    box-shadow: 2px 2px #fff, 4px 4px #313335;
+    top: -4px;
+    left: -4px;
+  }
+  &__promo {
+    width: 180px;
+    font-size: 17px;
+  }
+}

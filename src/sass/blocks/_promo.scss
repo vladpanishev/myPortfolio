@@ -50,9 +50,6 @@
       }
     }
   }
-  .btn {
-    @include button;
-  }
   &__img {
     &--animated {
       animation-iteration-count: 1;

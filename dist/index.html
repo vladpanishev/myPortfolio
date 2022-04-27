@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <title>Портфолио веб-разработчика</title>
     <script
       src="https://kit.fontawesome.com/8b1c600f44.js"
       crossorigin="anonymous"
@@ -17,19 +17,11 @@
       <div class="container">
         <div class="header__inner fadeInUp wow">
           <a class="header__logo" href="#">PANISHEV</a>
-          <nav class="header__nav">
-            <a class="header__nav-link header__nav-link--animated" href="#"
-              >Обо мне</a
-            >
-            <a class="header__nav-link header__nav-link--animated" href="#"
-              >Портфолио</a
-            >
-            <a class="header__nav-link header__nav-link--animated" href="#"
-              >Блог</a
-            >
-            <a class="header__nav-link header__nav-link--animated" href="#"
-              >Контакты</a
-            >
+          <nav class="nav">
+            <a class="nav__link" href="#">Обо мне</a>
+            <a class="nav__link" href="#">Портфолио</a>
+            <a class="nav__link" href="#">Блог</a>
+            <a class="nav__link" href="#">Контакты</a>
           </nav>
           <div class="social">
             <a
@@ -57,6 +49,7 @@
         </div>
       </div>
     </header>
+
     <!-- PROMO -->
     <section class="promo">
       <div class="container">
@@ -89,7 +82,7 @@
                 привлекательность
               </li>
             </ul>
-            <button class="btn btn--animated">Написть мне</button>
+            <button class="btn btn__promo">Написть мне</button>
             <picture
               ><source srcset="img/press.webp" type="image/webp" />
               <img src="img/press.png" width="170" alt=""
@@ -111,7 +104,7 @@
 
     <!-- ABOUT -->
     <section class="about">
-      <div class="about__title">Обо мне</div>
+      <div class="title title__about">Обо мне</div>
 
       <div class="about__inner">
         <div class="about__text">
@@ -128,7 +121,7 @@
             новых технологий и развиваю абстрактное мышление
             <i class="fa-regular fa-face-meh"></i>
           </p>
-          <div class="about__subtitle">Мой основной стек</div>
+          <div class="title title__stack">Мой основной стек</div>
           <div class="about__icons">
             <svg>
               <use xlink:href="img/sprite.svg#html"></use>
@@ -171,10 +164,10 @@
     <section>
       <div class="result">
         <div class="container">
-          <div class="result__title">5 принципов моей работы</div>
+          <div class="title title__result">5 принципов моей работы</div>
           <div class="result__inner">
             <div class="result__block">
-              <div class="result__icon">
+              <div class="result__block-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#speed"></use>
                 </svg>
@@ -189,7 +182,7 @@
             </div>
 
             <div class="result__block">
-              <div class="result__icon">
+              <div class="result__block-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#responsive"></use>
                 </svg>
@@ -204,7 +197,7 @@
             </div>
 
             <div class="result__block">
-              <div class="result__icon">
+              <div class="result__block-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#intuitive"></use>
                 </svg>
@@ -220,7 +213,7 @@
             </div>
 
             <div class="result__block">
-              <div class="result__icon">
+              <div class="result__block-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#dynamic"></use>
                 </svg>
@@ -233,7 +226,7 @@
             </div>
 
             <div class="result__block">
-              <div class="result__icon">
+              <div class="result__block-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#minimalistic"></use>
                 </svg>
@@ -248,21 +241,42 @@
         </div>
       </div>
     </section>
+
     <!-- PORTFOLIO -->
     <section class="portfolio">
       <div class="container">
-        <div class="portfolio__title">портфолио</div>
+        <div class="title title__portfolio">портфолио</div>
+        <div class="nav nav__portfolio">
+          <a class="nav__link" href="#">Все работы</a>
+          <a class="nav__link" href="#">Вёрстка и логика</a>
+          <a class="nav__link" href="#">Web-приложения</a>
+          <a class="nav__link" href="#">Игры</a>
+        </div>
+
         <div class="portfolio__inner">
-          <i class="fa-solid fa-angle-left"></i>
-          <picture
-            ><source srcset="img/portfolio-foto1.webp" type="image/webp" />
-            <img
-              class="portfolio__img"
-              src="img/portfolio-foto1.png"
-              width="700"
-              alt="Интернет магазин одежды"
-          /></picture>
-          <i class="fa-solid fa-angle-right"></i>
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="../img/work1.png" alt="" />
+            <div class="portfolio__content">
+              <div class="portfolio__descr">Описание работы</div>
+              <button class="portfolio__btn">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="../img/work2.png" alt="" />
+            <div class="portfolio__content">
+              <div class="portfolio__descr">Описание работы</div>
+              <button class="portfolio__btn">Подробнее</button>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="../img/work3.png" alt="" />
+            <div class="portfolio__content">
+              <div class="portfolio__descr">Описание работы</div>
+              <button class="portfolio__btn">Подробнее</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

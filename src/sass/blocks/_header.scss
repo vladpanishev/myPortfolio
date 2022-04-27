@@ -24,35 +24,4 @@
       box-shadow: 0 0 0 1px #f4ede2, 0 0 0 1px;
     }
   }
-  &__nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__nav-link {
-    position: relative;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-right: 20px;
-    color: #fff;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 25px;
-      left: 0;
-      display: block;
-      height: 2px;
-      border-radius: 1px;
-      width: 0%;
-      background-color: $grey-color;
-      transition: 0.2s all;
-    }
-    &:hover {
-      color: $grey-color;
-      &::before {
-        width: 100%;
-      }
-    }
-  }
 }
