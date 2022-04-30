@@ -15,35 +15,45 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <div class="header__inner fadeInUp wow">
+        <div class="header__inner">
           <a class="header__logo" href="#">PANISHEV</a>
           <nav class="nav">
+            <a class="nav__link" href="#">Главная</a>
             <a class="nav__link" href="#">Обо мне</a>
             <a class="nav__link" href="#">Портфолио</a>
-            <a class="nav__link" href="#">Блог</a>
             <a class="nav__link" href="#">Контакты</a>
           </nav>
           <div class="social">
             <a
-              class="social__link social__link--animated"
+              class="social__link"
               target="_blank"
               href="https://github.com/vladpanishev"
             >
               <i class="fa-brands fa-github"></i>
             </a>
+
             <a
-              class="social__link social__link--animated"
+              class="social__link"
+              target="_blank"
+              href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+              class="social__link"
+              target="_blank"
+              href="https://t.me/vladpanishev"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <a
+              class="social__link"
               target="_blank"
               href="https://www.instagram.com/vladpanishev/"
             >
               <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              class="social__link social__link--animated"
-              target="_blank"
-              href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
-            >
-              <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
         </div>
@@ -65,18 +75,22 @@
                 <i class="fa-solid fa-circle-check"></i>
                 быстродействие
               </li>
+
               <li>
                 <i class="fa-solid fa-circle-check"></i>
                 адаптивность
               </li>
+
               <li>
                 <i class="fa-solid fa-circle-check"></i>
                 удобство
               </li>
+
               <li>
                 <i class="fa-solid fa-circle-check"></i>
                 динамичность
               </li>
+
               <li>
                 <i class="fa-solid fa-circle-check"></i>
                 привлекательность
@@ -89,7 +103,7 @@
             /></picture>
           </div>
 
-          <div class="promo__img promo__img--animated">
+          <div class="promo__img">
             <picture
               ><source srcset="img/my-photo.webp" type="image/webp" />
               <img
@@ -104,7 +118,9 @@
 
     <!-- ABOUT -->
     <section class="about">
-      <div class="title title__about">Обо мне</div>
+      <div class="container">
+        <div class="title title__about">Обо мне</div>
+      </div>
 
       <div class="about__inner">
         <div class="about__text">
@@ -126,21 +142,27 @@
             <svg>
               <use xlink:href="img/sprite.svg#html"></use>
             </svg>
+
             <svg>
               <use xlink:href="img/sprite.svg#css"></use>
             </svg>
+
             <svg>
               <use xlink:href="img/sprite.svg#javascript"></use>
             </svg>
+
             <svg>
               <use xlink:href="img/sprite.svg#typescript"></use>
             </svg>
+
             <svg>
               <use xlink:href="img/sprite.svg#react"></use>
             </svg>
+
             <svg>
               <use xlink:href="img/sprite.svg#sass"></use>
             </svg>
+
             <svg>
               <use xlink:href="img/sprite.svg#figma"></use>
             </svg>
@@ -167,45 +189,41 @@
           <div class="title title__result">5 принципов моей работы</div>
           <div class="result__inner">
             <div class="result__block">
-              <div class="result__block-icon">
+              <div class="result__icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#speed"></use>
                 </svg>
               </div>
-              <div class="result__block-title">
-                Максимальная скорость загрузки
-              </div>
-              <div class="result__block-subtitle">
+              <div class="result__title">Максимальная скорость загрузки</div>
+              <div class="result__subtitle">
                 Экономит пользователю время и нервы, поэтому является одним из
                 моих главных приоритетов при создании продукта.
               </div>
             </div>
 
             <div class="result__block">
-              <div class="result__block-icon">
+              <div class="result__icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#responsive"></use>
                 </svg>
               </div>
-              <div class="result__block-title">
+              <div class="result__title">
                 Адаптивность под все возможные устройства
               </div>
-              <div class="result__block-subtitle">
+              <div class="result__subtitle">
                 Продукт, который получит пользователь будет работать на любом
                 возможном устройстве от смартфона до телевизора.
               </div>
             </div>
 
             <div class="result__block">
-              <div class="result__block-icon">
+              <div class="result__icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#intuitive"></use>
                 </svg>
               </div>
-              <div class="result__block-title">
-                Интуитивно понятный интерфейс
-              </div>
-              <div class="result__block-subtitle">
+              <div class="result__title">Интуитивно понятный интерфейс</div>
+              <div class="result__subtitle">
                 Всё самое необходимое находится в зоне видимости пользователя,
                 поэтому не нужно будет ломать голову куда кликать, свайпать и
                 переходить.
@@ -213,26 +231,26 @@
             </div>
 
             <div class="result__block">
-              <div class="result__block-icon">
+              <div class="result__icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#dynamic"></use>
                 </svg>
               </div>
-              <div class="result__block-title">Динамика при взаимодействии</div>
-              <div class="result__block-subtitle">
+              <div class="result__title">Динамика при взаимодействии</div>
+              <div class="result__subtitle">
                 Никакой статики, только лёгка приятная динамика, которая не
                 бросается в глаза и оживляет web-страницу.
               </div>
             </div>
 
             <div class="result__block">
-              <div class="result__block-icon">
+              <div class="result__icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#minimalistic"></use>
                 </svg>
               </div>
-              <div class="result__block-title">Привлекательный минимализм</div>
-              <div class="result__block-subtitle">
+              <div class="result__title">Привлекательный минимализм</div>
+              <div class="result__subtitle">
                 Минимализм способен придать любому продукту солидности и
                 постоянно держать его в тренде.
               </div>
@@ -276,6 +294,72 @@
               <div class="portfolio__descr">Описание работы</div>
               <button class="portfolio__btn">Подробнее</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="container">
+        <div class="title title__contact1">Контакты</div>
+        <div class="title title__contact2">Написать мне</div>
+
+        <div class="contact__inner">
+          <form class="form form__contact" action="#">
+            <input required placeholder="Ваше имя" type="text" />
+            <input required placeholder="Ваш e-mail" type="email" />
+            <textarea placeholder="Ваше сообщение" name="text"></textarea>
+            <button class="contact__btn">Отправить</button>
+          </form>
+          <div class="contact__message">
+            <div class="contact__subtitle">
+              Если у вас возникли вопросы, вы можете написать мне, и я отвечу
+              вам в самое ближайшее время.
+            </div>
+
+            <div class="social social__contact">
+              <a
+                class="social__link social__link-contact"
+                target="_blank"
+                href="https://github.com/vladpanishev"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                class="social__link social__link-contact"
+                target="_blank"
+                href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                class="social__link social__link-contact"
+                target="_blank"
+                href="https://t.me/vladpanishev"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+
+              <a
+                class="social__link social__link-contact"
+                target="_blank"
+                href="https://www.instagram.com/vladpanishev/"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <picture>
+              <source srcset="../img/message.png" type="image/webp" />
+              <img
+                class="contact__img"
+                src="../img/"
+                alt="Изображение письменного конверта"
+              />
+            </picture>
           </div>
         </div>
       </div>

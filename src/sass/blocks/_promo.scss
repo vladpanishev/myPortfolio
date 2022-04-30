@@ -51,11 +51,9 @@
     }
   }
   &__img {
-    &--animated {
-      animation-iteration-count: 1;
-      animation-name: bounceInDown;
-      animation-duration: 1.6s;
-      animation-timing-function: linear;
-    }
+    animation-iteration-count: 1;
+    animation-name: bounceInDown;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
   }
 }

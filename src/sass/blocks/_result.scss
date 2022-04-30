@@ -14,30 +14,30 @@
     &:last-child {
       margin-right: 0;
     }
-    &-icon {
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80px;
-      height: 80px;
-      svg {
-        fill: $grey-color;
-        width: 60px;
-        height: 60px;
-      }
+  }
+  &__icon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    svg {
+      fill: $grey-color;
+      width: 60px;
+      height: 60px;
     }
-    &-title {
-      margin-bottom: 15px;
-      font-family: $second-font;
-      font-size: 18px;
-      text-align: center;
-      color: $grey-color;
-    }
-    &-subtitle {
-      font-size: 12px;
-      text-align: center;
-      color: $grey-color;
-    }
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-family: $second-font;
+    font-size: 18px;
+    text-align: center;
+    color: $grey-color;
+  }
+  &__subtitle {
+    font-size: 12px;
+    text-align: center;
+    color: $grey-color;
   }
 }
