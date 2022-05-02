@@ -1,14 +1,14 @@
 .about {
-  min-height: 550px;
-  padding: 20px 130px 0;
-  background-color: $black-color;
+  min-height: 520px;
+  padding: 40px 130px 20px;
   &__inner {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    padding: 20px 0;
     transition: 0.3s all;
   }
   &__text {
+    position: relative;
     padding: 15px;
     background-color: #323436;
     box-shadow: 0 -0px 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
@@ -61,5 +61,19 @@
   }
   &__img {
     transform: scale(0.57) translateY(-32px) rotate(-3deg);
+  }
+}
+
+@include desktop {
+  .about {
+    padding-bottom: 0;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0;
+    }
+    &__text {
+      font-size: 16px;
+    }
   }
 }

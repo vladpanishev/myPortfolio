@@ -8,6 +8,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: $black-color;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -28,32 +32,3 @@
 @import 'blocks/portfolio';
 @import 'blocks/contact';
 @import 'blocks/footer';
-
-// <div class="about__github">
-//             <img src="../img/github.png" alt="" />
-//             <a
-//               href="https://github.com/vladpanishev/myPortfolio"
-//               target="_blank"
-//             >
-//               <i class="fa-brands fa-github-alt"></i>
-//             </a>
-//           </div>
-
-// &__github {
-//   img {
-//     transform: translateY(1px) translateX();
-//   }
-//   margin-top: 30px;
-//   i {
-//     color: #fff;
-//     font-size: 32px;
-//     &:hover {
-//       animation-name: zoomx2;
-//       animation-play-state: running;
-//       animation-iteration-count: 1;
-//       animation-duration: 0.1s;
-//       animation-timing-function: linear;
-//       animation-fill-mode: forwards;
-//     }
-//   }
-// }

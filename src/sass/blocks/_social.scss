@@ -1,22 +1,32 @@
 .social {
   display: flex;
   justify-content: space-between;
-  &__link {
-    margin-right: 15px;
-    font-size: 30px;
-    color: $grey-color;
-    transition: 0.1s all;
-    &:hover {
-      color: $grey-color;
-      animation-name: zoomx2;
-      animation-play-state: running;
-      animation-iteration-count: 1;
-      animation-duration: 0.1s;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards;
+  &__header {
+    &-link {
+      @include social-link;
     }
   }
   &__contact {
     margin-bottom: 15px;
+    &-link {
+      @include social-link;
+    }
+  }
+}
+
+@include desktop {
+  .social {
+    &__header {
+      &-link {
+        margin-right: 12px;
+        font-size: 25px;
+      }
+    }
+    &__contact {
+      &-link {
+        margin-right: 12px;
+        font-size: 25px;
+      }
+    }
   }
 }

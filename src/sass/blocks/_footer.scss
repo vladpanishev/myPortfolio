@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 50px;
+  height: 150px;
+  &__block {
+    &-text1 {
+      display: flex;
+      font-size: 13px;
+      color: rgb(244, 237, 226, 0.27);
+      img {
+        width: 55px;
+        transform: translateX(-3px) rotate(-1deg);
+      }
+      i {
+        color: rgb(244, 237, 226, 0.27);
+        font-size: 18px;
+        transform: translateY(2px);
+        transition: 0.2s all;
+        &:hover {
+          color: rgb(244, 237, 226, 0.5);
+        }
+      }
+    }
+    &-text2 {
+      font-size: 13px;
+      text-align: center;
+      color: rgb(244, 237, 226, 0.27);
+    }
+    &-text3 {
+      font-size: 13px;
+      color: rgb(244, 237, 226, 0.27);
+      font-style: italic;
+      span {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .footer {
+    height: 130px;
+    padding: 10px 20px;
+    &__block-text1 {
+      font-size: 12px;
+    }
+    &__block-text2 {
+      font-size: 12px;
+    }
+    &__block-text3 {
+      font-size: 12px;
+    }
+  }
+}

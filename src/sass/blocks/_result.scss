@@ -1,6 +1,6 @@
 .result {
-  background-color: $black-color;
-  min-height: 375px;
+  padding-bottom: 45px;
+  min-height: 350px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -39,5 +39,21 @@
     font-size: 12px;
     text-align: center;
     color: $grey-color;
+  }
+}
+
+@include desktop {
+  .result {
+    min-height: 300px;
+    &__icon {
+      width: 45px;
+      height: 55px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+    &__subtitle {
+      font-size: 10px;
+    }
   }
 }

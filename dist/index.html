@@ -17,15 +17,15 @@
       <div class="container">
         <div class="header__inner">
           <a class="header__logo" href="#">PANISHEV</a>
-          <nav class="nav">
-            <a class="nav__link" href="#">Главная</a>
-            <a class="nav__link" href="#">Обо мне</a>
-            <a class="nav__link" href="#">Портфолио</a>
-            <a class="nav__link" href="#">Контакты</a>
+          <nav class="nav nav__header">
+            <a class="nav__header-link" href="#">Главная</a>
+            <a class="nav__header-link" href="#">Обо мне</a>
+            <a class="nav__header-link" href="#">Портфолио</a>
+            <a class="nav__header-link" href="#">Контакты</a>
           </nav>
-          <div class="social">
+          <div class="social social__header">
             <a
-              class="social__link"
+              class="social__header-link"
               target="_blank"
               href="https://github.com/vladpanishev"
             >
@@ -33,7 +33,7 @@
             </a>
 
             <a
-              class="social__link"
+              class="social__header-link"
               target="_blank"
               href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
             >
@@ -41,7 +41,7 @@
             </a>
 
             <a
-              class="social__link"
+              class="social__header-link"
               target="_blank"
               href="https://t.me/vladpanishev"
             >
@@ -49,7 +49,7 @@
             </a>
 
             <a
-              class="social__link"
+              class="social__header-link"
               target="_blank"
               href="https://www.instagram.com/vladpanishev/"
             >
@@ -96,7 +96,7 @@
                 привлекательность
               </li>
             </ul>
-            <button class="btn btn__promo">Написть мне</button>
+            <button class="promo__btn">Написть мне</button>
             <picture
               ><source srcset="img/press.webp" type="image/webp" />
               <img src="img/press.png" width="170" alt=""
@@ -108,7 +108,6 @@
               ><source srcset="img/my-photo.webp" type="image/webp" />
               <img
                 src="img/my-photo.png"
-                width="600"
                 alt="Панищев Владислав - веб разработчик"
             /></picture>
           </div>
@@ -118,17 +117,16 @@
 
     <!-- ABOUT -->
     <section class="about">
-      <div class="container">
-        <div class="title title__about">Обо мне</div>
-      </div>
+      <div class="container"></div>
 
       <div class="about__inner">
         <div class="about__text">
+          <div class="title title__about">Обо мне</div>
           <p>
             Я из Калуги, люблю программировать и испытываю настоящую страсть к
-            минималистичному UX/UI, который сочетает в себе простоту и
-            привлекательность и в то же время является динамичным и интуитивно
-            понятным пользователю.
+            удобному и минималистичному UX/UI, которые сочетают в себе простоту
+            и привлекательность и в то же время являются динамичными и
+            интуитивно понятными пользователю.
           </p>
 
           <p>
@@ -265,10 +263,10 @@
       <div class="container">
         <div class="title title__portfolio">портфолио</div>
         <div class="nav nav__portfolio">
-          <a class="nav__link" href="#">Все работы</a>
-          <a class="nav__link" href="#">Вёрстка и логика</a>
-          <a class="nav__link" href="#">Web-приложения</a>
-          <a class="nav__link" href="#">Игры</a>
+          <a class="nav__portfolio-link" href="#">Все работы</a>
+          <a class="nav__portfolio-link" href="#">Вёрстка и логика</a>
+          <a class="nav__portfolio-link" href="#">Web-приложения</a>
+          <a class="nav__portfolio-link" href="#">Игры</a>
         </div>
 
         <div class="portfolio__inner">
@@ -276,7 +274,7 @@
             <img class="portfolio__img" src="../img/work1.png" alt="" />
             <div class="portfolio__content">
               <div class="portfolio__descr">Описание работы</div>
-              <button class="portfolio__btn">Подробнее</button>
+              <button class="btn btn__portfolio">Подробнее</button>
             </div>
           </div>
 
@@ -284,7 +282,7 @@
             <img class="portfolio__img" src="../img/work2.png" alt="" />
             <div class="portfolio__content">
               <div class="portfolio__descr">Описание работы</div>
-              <button class="portfolio__btn">Подробнее</button>
+              <button class="btn btn__portfolio">Подробнее</button>
             </div>
           </div>
 
@@ -292,7 +290,7 @@
             <img class="portfolio__img" src="../img/work3.png" alt="" />
             <div class="portfolio__content">
               <div class="portfolio__descr">Описание работы</div>
-              <button class="portfolio__btn">Подробнее</button>
+              <button class="btn btn__portfolio">Подробнее</button>
             </div>
           </div>
         </div>
@@ -303,14 +301,15 @@
     <section class="contact">
       <div class="container">
         <div class="title title__contact1">Контакты</div>
-        <div class="title title__contact2">Написать мне</div>
 
         <div class="contact__inner">
-          <form class="form form__contact" action="#">
+          <form class="form" action="#">
+            <div class="title title__contact2">Написать мне</div>
             <input required placeholder="Ваше имя" type="text" />
             <input required placeholder="Ваш e-mail" type="email" />
             <textarea placeholder="Ваше сообщение" name="text"></textarea>
-            <button class="contact__btn">Отправить</button>
+
+            <button class="btn btn__contact">Отправить</button>
           </form>
           <div class="contact__message">
             <div class="contact__subtitle">
@@ -320,7 +319,7 @@
 
             <div class="social social__contact">
               <a
-                class="social__link social__link-contact"
+                class="social__contact-link"
                 target="_blank"
                 href="https://github.com/vladpanishev"
               >
@@ -328,7 +327,7 @@
               </a>
 
               <a
-                class="social__link social__link-contact"
+                class="social__contact-link"
                 target="_blank"
                 href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
               >
@@ -336,7 +335,7 @@
               </a>
 
               <a
-                class="social__link social__link-contact"
+                class="social__contact-link"
                 target="_blank"
                 href="https://t.me/vladpanishev"
               >
@@ -344,7 +343,7 @@
               </a>
 
               <a
-                class="social__link social__link-contact"
+                class="social__contact-link"
                 target="_blank"
                 href="https://www.instagram.com/vladpanishev/"
               >
@@ -357,13 +356,37 @@
               <img
                 class="contact__img"
                 src="../img/"
-                alt="Изображение письменного конверта"
+                alt="Письменные конверты"
               />
             </picture>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__block footer__block-text1">
+        GitHub репозиторий этого сайта
+        <picture>
+          <source srcset="../img/arrow.png" type="image/webp" />
+          <img src="../img/arrow.png" alt="" />
+        </picture>
+        <a href="https://github.com/vladpanishev/myPortfolio" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+
+      <div class="footer__block footer__block-text2">
+        Панищев Владислав © 2022
+      </div>
+
+      <div class="footer__block footer__block-text3">
+        "Болтовня ничего не стоит. Покажите мне код."<br /><br />
+
+        <span>— Linus Torvalds (Создатель ядра Linux)</span>
+      </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="js/main.min.js"></script>

@@ -5,11 +5,14 @@
   text-transform: uppercase;
   font-family: $second-font;
   &__about {
+    position: absolute;
+    top: -26px;
+    left: 11px;
     width: 155px;
     font-weight: 900;
     line-height: 34px;
     font-size: 30px;
-    transform: translateX(-15px) translateY(27px) rotate(-3deg);
+    transform: rotate(-3deg);
   }
   &__stack {
     margin: 0 auto;
@@ -43,11 +46,41 @@
     font-size: 45px;
   }
   &__contact2 {
+    position: absolute;
+    top: -22px;
+    left: -8px;
     width: 206px;
     margin-bottom: 20px;
     font-weight: 900;
     line-height: 26px;
     font-size: 25px;
-    transform: translateX(94px) translateY(54px) rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+}
+
+@include desktop {
+  .title {
+    &__about {
+      top: -20px;
+      left: 9px;
+      width: 137px;
+      line-height: 28px;
+      font-size: 27px;
+    }
+    &__result {
+      line-height: 22px;
+      font-size: 17px;
+      width: 259px;
+    }
+    &__portfolio {
+      width: 248px;
+      line-height: 36px;
+      font-size: 35px;
+    }
+    &__contact1 {
+      width: 206px;
+      line-height: 36px;
+      font-size: 35px;
+    }
   }
 }

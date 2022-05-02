@@ -1,5 +1,6 @@
 .promo {
   padding: 40px 0;
+  background-color: #fff;
   &__inner {
     padding-top: 20px;
     display: flex;
@@ -40,6 +41,7 @@
     }
   }
   &__list {
+    padding-left: 0;
     margin-bottom: 50px;
     li {
       font-weight: 300;
@@ -50,10 +52,71 @@
       }
     }
   }
+  &__btn {
+    width: 180px;
+    background: #313335;
+    position: relative;
+    display: block;
+    height: 50px;
+    background-color: $black-color;
+    font-weight: 500;
+    font-family: $second-font;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fff;
+    top: 0;
+    left: 0;
+    transition: 0.2s all;
+    &:hover {
+      box-shadow: 2px 2px #fff, 4px 4px #313335;
+      top: -4px;
+      left: -4px;
+    }
+  }
   &__img {
-    animation-iteration-count: 1;
-    animation-name: bounceInDown;
-    animation-duration: 1.6s;
-    animation-timing-function: linear;
+    img {
+      width: 550px;
+      animation-iteration-count: 1;
+      animation-name: bounceInDown;
+      animation-duration: 1.6s;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@include desktop {
+  .promo {
+    padding: 20px 0;
+    &__inner {
+      justify-content: space-around;
+    }
+    &__text {
+      width: 445px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 45px;
+    }
+    &__descr {
+      font-size: 20px;
+      line-height: 26px;
+      span {
+        margin-bottom: 10px;
+        line-height: 45px;
+        font-size: 39px;
+        width: 445px;
+      }
+    }
+    &__list {
+      li {
+        font-size: 16px;
+      }
+    }
+    &__img {
+      img {
+        width: 470px;
+      }
+    }
   }
 }

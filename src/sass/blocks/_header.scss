@@ -1,13 +1,13 @@
 .header {
   height: 70px;
   padding: 13px 0;
-  background-color: $black-color;
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   &__logo {
+    position: relative;
     display: block;
     background-color: $black-color;
     text-align: center;
@@ -16,11 +16,19 @@
     line-height: 43px;
     font-size: 43px;
     width: 252px;
-    color: #fff;
+    color: $grey-color;
     transition: 0.2s all;
     &:hover {
       color: $grey-color;
-      box-shadow: 0 0 0 1px #f4ede2, 0 0 0 1px;
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    height: 67px;
+    &__logo {
+      font-size: 40px;
     }
   }
 }
