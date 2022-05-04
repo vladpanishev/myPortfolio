@@ -23,18 +23,15 @@
   }
 }
 
-@mixin small-screen {
-  @media (max-width: 320px) {
-    @content;
-  }
-}
-
 // social
 @mixin social-link {
   margin-right: 15px;
   font-size: 30px;
   color: $grey-color;
   transition: 0.1s all;
+  &:last-child {
+    margin-right: 0;
+  }
   &:hover {
     color: $grey-color;
     animation-name: zoomx2;
@@ -54,6 +51,9 @@
   line-height: 20px;
   margin-right: 20px;
   color: $grey-color;
+  &:last-child {
+    margin-right: 0;
+  }
   &::before {
     content: '';
     position: absolute;

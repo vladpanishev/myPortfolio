@@ -58,6 +58,7 @@
   }
 }
 
+// @media
 @include desktop {
   .title {
     &__about {
@@ -81,6 +82,87 @@
       width: 206px;
       line-height: 36px;
       font-size: 35px;
+    }
+  }
+}
+
+@include laptop {
+  .title {
+    &__about {
+      top: -18px;
+      width: 117px;
+      line-height: 25px;
+      font-size: 23px;
+    }
+    &__stack {
+      margin: 14px auto;
+      line-height: 17px;
+      font-size: 13px;
+      width: 155px;
+    }
+    &__result {
+      margin-bottom: 25px;
+      line-height: 20px;
+      font-size: 15px;
+      width: 230px;
+    }
+    &__portfolio {
+      width: 209px;
+      line-height: 32px;
+      font-size: 30px;
+    }
+    &__contact1 {
+      width: 175px;
+      line-height: 32px;
+      font-size: 30px;
+    }
+    &__contact2 {
+      top: -19px;
+      left: -7px;
+      width: 166px;
+      line-height: 23px;
+      font-size: 20px;
+    }
+  }
+}
+
+@include tablet {
+  .title {
+    &__about {
+      top: -12px;
+      width: 80px;
+      line-height: 17px;
+      font-size: 16px;
+    }
+    &__stack {
+      margin: 10px auto;
+      margin-top: 13px;
+      line-height: 13px;
+      font-size: 9px;
+      width: 119px;
+    }
+    &__result {
+      margin-bottom: 20px;
+      line-height: 16px;
+      font-size: 11px;
+      width: 168px;
+    }
+    &__portfolio {
+      width: 171px;
+      line-height: 27px;
+      font-size: 24px;
+    }
+    &__contact1 {
+      width: 142px;
+      line-height: 27px;
+      font-size: 24px;
+    }
+    &__contact2 {
+      top: -14px;
+      left: -5px;
+      width: 109px;
+      line-height: 16px;
+      font-size: 13px;
     }
   }
 }

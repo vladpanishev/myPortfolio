@@ -10,7 +10,7 @@
       font-size: 13px;
       color: rgb(244, 237, 226, 0.27);
       img {
-        width: 55px;
+        width: 54px;
         transform: translateX(-3px) rotate(-1deg);
       }
       i {
@@ -40,18 +40,66 @@
   }
 }
 
+// @media
 @include desktop {
   .footer {
     height: 130px;
     padding: 10px 20px;
     &__block-text1 {
-      font-size: 12px;
+      font-size: 11px;
+      i {
+        font-size: 16px;
+      }
     }
     &__block-text2 {
-      font-size: 12px;
+      font-size: 11px;
     }
     &__block-text3 {
-      font-size: 12px;
+      font-size: 11px;
+    }
+  }
+}
+
+@include laptop {
+  .footer {
+    height: 100px;
+    &__block-text1 {
+      font-size: 9px;
+      img {
+        width: 37px;
+      }
+      i {
+        font-size: 13px;
+        transform: translateY(1px);
+      }
+    }
+    &__block-text2 {
+      font-size: 9px;
+    }
+    &__block-text3 {
+      font-size: 9px;
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    padding: 10px;
+    height: 85px;
+    &__block-text1 {
+      font-size: 7px;
+      img {
+        width: 23px;
+      }
+      i {
+        font-size: 10px;
+      }
+    }
+    &__block-text2 {
+      font-size: 7px;
+    }
+    &__block-text3 {
+      font-size: 7px;
     }
   }
 }

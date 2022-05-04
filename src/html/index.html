@@ -51,6 +51,14 @@
             <a
               class="social__header-link"
               target="_blank"
+              href="https://twitter.com/vlad_panishev"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a
+              class="social__header-link"
+              target="_blank"
               href="https://www.instagram.com/vladpanishev/"
             >
               <i class="fa-brands fa-instagram"></i>
@@ -99,14 +107,15 @@
             <button class="promo__btn">Написть мне</button>
             <picture
               ><source srcset="img/press.webp" type="image/webp" />
-              <img src="img/press.png" width="170" alt=""
+              <img class="promo__text-img" src="img/press.png" alt=""
             /></picture>
           </div>
 
-          <div class="promo__img">
+          <div>
             <picture
               ><source srcset="img/my-photo.webp" type="image/webp" />
               <img
+                class="promo__img"
                 src="img/my-photo.png"
                 alt="Панищев Владислав - веб разработчик"
             /></picture>
@@ -117,7 +126,7 @@
 
     <!-- ABOUT -->
     <section class="about">
-      <div class="container"></div>
+      <div class="container about__container"></div>
 
       <div class="about__inner">
         <div class="about__text">
@@ -170,11 +179,11 @@
         <div class="about__photo">
           <picture
             ><source srcset="img/my-family.webp" type="image/webp" />
-            <img src="img/my-family.png" width="600" alt="Моя семья"
-          /></picture>
-          <picture
-            ><source srcset="img/ico-myFamily.webp" type="image/webp" />
-            <img class="about__img" src="img/ico-myFamily.png" alt=""
+            <img
+              class="about__img"
+              src="img/my-family.png"
+              width="600"
+              alt="Моя семья"
           /></picture>
         </div>
       </div>
@@ -309,7 +318,7 @@
             <input required placeholder="Ваш e-mail" type="email" />
             <textarea placeholder="Ваше сообщение" name="text"></textarea>
 
-            <button class="btn btn__contact">Отправить</button>
+            <button class="btn btn__form">Отправить</button>
           </form>
           <div class="contact__message">
             <div class="contact__subtitle">
@@ -340,6 +349,14 @@
                 href="https://t.me/vladpanishev"
               >
                 <i class="fa-brands fa-telegram"></i>
+              </a>
+
+              <a
+                class="social__contact-link"
+                target="_blank"
+                href="https://twitter.com/vlad_panishev"
+              >
+                <i class="fa-brands fa-twitter"></i>
               </a>
 
               <a
@@ -378,6 +395,7 @@
       </div>
 
       <div class="footer__block footer__block-text2">
+        Дизайн, вёрстку и логику сайта выполнил:<br />
         Панищев Владислав © 2022
       </div>
 

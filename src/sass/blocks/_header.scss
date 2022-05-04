@@ -1,34 +1,53 @@
 .header {
+  display: flex;
+  align-items: center;
   height: 70px;
-  padding: 13px 0;
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   &__logo {
-    position: relative;
-    display: block;
-    background-color: $black-color;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    line-height: 43px;
     font-size: 43px;
-    width: 252px;
+    line-height: 35px;
     color: $grey-color;
-    transition: 0.2s all;
     &:hover {
       color: $grey-color;
     }
   }
 }
 
+// @media
 @include desktop {
   .header {
-    height: 67px;
+    height: 62px;
     &__logo {
-      font-size: 40px;
+      font-size: 38px;
+    }
+  }
+}
+
+@include laptop {
+  .header {
+    height: 49px;
+    &__inner {
+      justify-content: space-between;
+    }
+    &__logo {
+      font-size: 28px;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    height: 40px;
+    &__logo {
+      font-size: 21px;
+      line-height: 18px;
     }
   }
 }
