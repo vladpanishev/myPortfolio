@@ -1,105 +1,129 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 10px 50px;
-  height: 150px;
-  &__block {
-    &-text1 {
-      display: flex;
-      font-size: 13px;
+  padding: 15px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__block1 {
+    display: flex;
+
+    font-size: 13px;
+    color: rgb(244, 237, 226, 0.27);
+    i {
+      margin-left: 5px;
+
       color: rgb(244, 237, 226, 0.27);
-      img {
-        width: 54px;
-        transform: translateX(-3px) rotate(-1deg);
+      font-size: 16px;
+
+      transition: 0.2s all;
+      &:hover {
+        color: rgb(244, 237, 226, 0.5);
       }
-      i {
-        color: rgb(244, 237, 226, 0.27);
-        font-size: 18px;
-        transform: translateY(2px);
-        transition: 0.2s all;
-        &:hover {
-          color: rgb(244, 237, 226, 0.5);
+    }
+  }
+
+  &__block2 {
+    font-size: 13px;
+    text-align: center;
+    color: rgb(244, 237, 226, 0.27);
+  }
+
+  &__block3 {
+    font-size: 13px;
+    color: rgb(244, 237, 226, 0.27);
+    font-style: italic;
+    span {
+      display: block;
+      text-align: right;
+    }
+  }
+
+  // @media
+  @include desktop {
+    .footer {
+      padding: 10px 20px;
+      &__block1 {
+        font-size: 11px;
+        i {
+          margin-left: 4px;
+
+          font-size: 14px;
         }
       }
-    }
-    &-text2 {
-      font-size: 13px;
-      text-align: center;
-      color: rgb(244, 237, 226, 0.27);
-    }
-    &-text3 {
-      font-size: 13px;
-      color: rgb(244, 237, 226, 0.27);
-      font-style: italic;
-      span {
-        display: block;
-        text-align: right;
+
+      &__block2 {
+        font-size: 11px;
+      }
+
+      &__block3 {
+        font-size: 11px;
       }
     }
   }
-}
 
-// @media
-@include desktop {
-  .footer {
-    height: 130px;
-    padding: 10px 20px;
-    &__block-text1 {
-      font-size: 11px;
-      i {
-        font-size: 16px;
+  @include laptop {
+    .footer {
+      &__block1 {
+        font-size: 9px;
+        i {
+          font-size: 9px;
+          &:hover {
+            color: rgb(244, 237, 226, 0.27);
+          }
+        }
       }
-    }
-    &__block-text2 {
-      font-size: 11px;
-    }
-    &__block-text3 {
-      font-size: 11px;
+
+      &__block2 {
+        font-size: 9px;
+      }
+
+      &__block3 {
+        font-size: 9px;
+      }
     }
   }
-}
 
-@include laptop {
-  .footer {
-    height: 100px;
-    &__block-text1 {
-      font-size: 9px;
-      img {
-        width: 37px;
+  @include tablet {
+    .footer {
+      padding: 10px;
+      &__block1 {
+        font-size: 7px;
       }
-      i {
-        font-size: 13px;
-        transform: translateY(1px);
+
+      &__block2 {
+        font-size: 7px;
       }
-    }
-    &__block-text2 {
-      font-size: 9px;
-    }
-    &__block-text3 {
-      font-size: 9px;
+
+      &__block3 {
+        font-size: 7px;
+      }
     }
   }
-}
 
-@include tablet {
-  .footer {
-    padding: 10px;
-    height: 85px;
-    &__block-text1 {
-      font-size: 7px;
-      img {
-        width: 23px;
+  @include mobile {
+    .footer {
+      padding: 5px;
+      &__inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
       }
-      i {
-        font-size: 10px;
+
+      &__block1 {
+        margin-bottom: 10px;
+
+        font-size: 7px;
       }
-    }
-    &__block-text2 {
-      font-size: 7px;
-    }
-    &__block-text3 {
-      font-size: 7px;
+
+      &__block2 {
+        font-size: 7px;
+      }
+
+      &__block3 {
+        display: none;
+      }
     }
   }
 }

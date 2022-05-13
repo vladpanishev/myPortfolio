@@ -9,14 +9,6 @@ module.exports = {
     verbose: true,
   },
 
-  svgSprite: {
-    mode: {
-      stack: {
-        sprite: `../sprite.svg`,
-      },
-    },
-  },
-
   fonter: {
     formats: ['ttf', 'woff', 'eot', 'svg'],
   },

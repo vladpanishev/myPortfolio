@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио веб-разработчика</title>
+    <meta
+      name="description"
+      content="Портфолио html-верстальщика. Использую технологии HTML, CSS, JavaScript, SCSS, Gulp, Git. Делаю сайты, с которыми комфортно взаимодействовать"
+    />
+    <title>Портфолио html-верстальщика</title>
     <script
       src="https://kit.fontawesome.com/8b1c600f44.js"
       crossorigin="anonymous"
@@ -12,401 +16,606 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    @@include("chunk/sprite.html")
+
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo" href="#">PANISHEV</a>
           <nav class="nav nav__header">
-            <a class="nav__header-link" href="#">Главная</a>
-            <a class="nav__header-link" href="#">Обо мне</a>
-            <a class="nav__header-link" href="#">Портфолио</a>
-            <a class="nav__header-link" href="#">Контакты</a>
+            <!-- "header__logo-burger" используется только для @media (max-width: 575px) -->
+            <a class="header__logo header__logo-burger" href="#header"
+              >PANISHEV</a
+            >
+            <ul>
+              <li class="nav__list nav__list-header">
+                <a class="nav__link nav__link-header" href="#header">
+                  <i class="fa-solid fa-house-chimney-window"></i> Главная</a
+                >
+              </li>
+
+              <li class="nav__list nav__list-header">
+                <a class="nav__link nav__link-header" href="#about">
+                  <i class="fa-solid fa-address-card"></i> Обо мне</a
+                >
+              </li>
+
+              <li class="nav__list nav__list-header">
+                <a class="nav__link nav__link-header" href="#portfolio">
+                  <i class="fa-solid fa-briefcase"></i> Портфолио</a
+                >
+              </li>
+
+              <li class="nav__list nav__list-header">
+                <a class="nav__link nav__link-header" href="#contact">
+                  <i class="fa-solid fa-envelope"></i> Контакты</a
+                >
+              </li>
+            </ul>
+
+            <!-- "social__burger" используется только для @media (max-width: 575px) -->
+            <nav class="social social__burger">
+              <ul>
+                <li class="social__list social__list-burger">
+                  <a
+                    class="social__link social__link-burger"
+                    target="_blank"
+                    href="https://github.com/vladpanishev"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+
+                <li class="social__list social__list-burger">
+                  <a
+                    class="social__link social__link-burger"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+
+                <li class="social__list social__list-burger">
+                  <a
+                    class="social__link social__link-burger"
+                    target="_blank"
+                    href="https://t.me/vladpanishev"
+                  >
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+
+                <li class="social__list social__list-burger">
+                  <a
+                    class="social__link social__link-burger"
+                    target="_blank"
+                    href="https://twitter.com/vlad_panishev"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li class="social__list social__list-burger">
+                  <a
+                    class="social__link social__link-burger"
+                    target="_blank"
+                    href="https://www.instagram.com/vladpanishev/"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- "nav-text" используется только для @media (max-width: 575px) -->
+            <div class="nav-text">
+              <p>
+                "Болтовня ничего не стоит. Покажите мне код."<br /><br />
+
+                <span>— Linus Torvalds (Создатель ядра Linux)</span>
+              </p>
+            </div>
           </nav>
-          <div class="social social__header">
-            <a
-              class="social__header-link"
-              target="_blank"
-              href="https://github.com/vladpanishev"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
 
-            <a
-              class="social__header-link"
-              target="_blank"
-              href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <nav class="social social__header">
+            <ul>
+              <li class="social__list social__list-header">
+                <a
+                  class="social__link social__link-header"
+                  target="_blank"
+                  href="https://github.com/vladpanishev"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
 
-            <a
-              class="social__header-link"
-              target="_blank"
-              href="https://t.me/vladpanishev"
-            >
-              <i class="fa-brands fa-telegram"></i>
-            </a>
+              <li class="social__list social__list-header">
+                <a
+                  class="social__link social__link-header"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
 
-            <a
-              class="social__header-link"
-              target="_blank"
-              href="https://twitter.com/vlad_panishev"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
+              <li class="social__list social__list-header">
+                <a
+                  class="social__link social__link-header"
+                  target="_blank"
+                  href="https://t.me/vladpanishev"
+                >
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+              </li>
 
-            <a
-              class="social__header-link"
-              target="_blank"
-              href="https://www.instagram.com/vladpanishev/"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
+              <li class="social__list social__list-header">
+                <a
+                  class="social__link social__link-header"
+                  target="_blank"
+                  href="https://twitter.com/vlad_panishev"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+
+              <li class="social__list social__list-header">
+                <a
+                  class="social__link social__link-header"
+                  target="_blank"
+                  href="https://www.instagram.com/vladpanishev/"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
+
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </header>
 
     <!-- PROMO -->
-    <section class="promo">
-      <div class="container">
-        <div class="promo__inner">
-          <div class="promo__text">
-            <h1 class="promo__title">Привет,<br />я Влад Панищев.</h1>
-            <h2 class="promo__descr">
-              <span>веб-разработчик</span><br />Делаю сайты и веб-приложения.
-              Работаю по приципам:
-            </h2>
-            <ul class="promo__list">
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                быстродействие
+    <main>
+      <section class="promo">
+        <div class="container">
+          <ul class="promo__inner">
+            <li class="promo__block-text">
+              <h1 class="promo__name">Владислав Панищев</h1>
+              <p class="promo__title">html-верстальщик</p>
+              <p class="promo__subtitle">
+                &laquo;Делаю сайты, с&nbsp;которыми комфортно
+                взаимодействовать&raquo
+              </p>
+
+              <dl class="principle">
+                <dt class="principle__title">основные принципы</dt>
+                <dd>
+                  <ul class="principle__list">
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      Быстродействие
+                    </li>
+
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      Семантика
+                    </li>
+
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      Адаптивность
+                    </li>
+
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      Удобство
+                    </li>
+
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      Кроссбраузерность
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+
+              <button class="promo__btn">Написать мне</button>
+
+              <!-- "promo__img2" используется только для @media (max-width: 575px) -->
+              <figure>
+                <picture
+                  ><source srcset="img/my-photo.webp" type="image/webp" />
+                  <img
+                    class="promo__img2"
+                    src="img/my-photo.png"
+                    alt="Панищев Владислав - html-верстальщик"
+                /></picture>
+              </figure>
+            </li>
+
+            <li class="promo__block-photo">
+              <figure>
+                <picture
+                  ><source srcset="img/my-photo.webp" type="image/webp" />
+                  <img
+                    class="promo__img"
+                    src="img/my-photo.png"
+                    alt="Панищев Владислав - html-верстальщик"
+                /></picture>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <article>
+        <section class="about" id="about">
+          <div class="container">
+            <ul class="about__inner">
+              <li class="about__block-text">
+                <h2 class="title title__about">Обо мне</h2>
+                <p>
+                  Я&nbsp;из&nbsp;Калуги, люблю программировать и&nbsp;испытываю
+                  настоящую страсть к удобному и&nbsp;минималистичному UX/UI,
+                  которые сочетают в&nbsp;себе простоту и&nbsp;привлекательность
+                  и&nbsp;в&nbsp;то&nbsp;же время являются динамичными и
+                  интуитивно понятными пользователю.
+                </p>
+
+                <p>
+                  Пишу на&nbsp;JavaScript и&nbsp;TypeScript. В&nbsp;качестве
+                  библиотеки использую React. Cвободное время провожу
+                  со&nbsp;своей семьей, занимаюсь изучением новых технологий
+                  и&nbsp;развиваю абстрактное мышление
+                  <i class="fa-regular fa-face-meh"></i>
+                </p>
+                <h3 class="title title__stack">Мой основной стек</h3>
+                <div class="about__icons">
+                  <svg>
+                    <use xlink:href="#html"></use>
+                  </svg>
+
+                  <svg>
+                    <use xlink:href="#css"></use>
+                  </svg>
+
+                  <svg>
+                    <use xlink:href="#javascript"></use>
+                  </svg>
+
+                  <svg>
+                    <use xlink:href="#typescript"></use>
+                  </svg>
+
+                  <svg>
+                    <use xlink:href="#react"></use>
+                  </svg>
+
+                  <svg>
+                    <use xlink:href="#sass"></use>
+                  </svg>
+
+                  <svg>
+                    <use xlink:href="#figma"></use>
+                  </svg>
+                </div>
               </li>
 
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                адаптивность
-              </li>
+              <li class="about__block-photo">
+                <figure>
+                  <picture
+                    ><source srcset="img/my-family.webp" type="image/webp" />
+                    <img
+                      class="about__img"
+                      src="img/my-family.png"
+                      alt="Семейные фотографии Панищева Владислава"
+                  /></picture>
+                </figure>
 
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                удобство
-              </li>
-
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                динамичность
-              </li>
-
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                привлекательность
+                <!-- "about__img2" используется только для @media (max-width: 575px) -->
+                <figure>
+                  <picture>
+                    <source srcset="img/my-family2.png" type="image/webp" />
+                    <img
+                      class="about__img2"
+                      src="img/my-family2.png"
+                      alt="Семейные фотографии Панищева Владислава"
+                    />
+                  </picture>
+                </figure>
               </li>
             </ul>
-            <button class="promo__btn">Написть мне</button>
-            <picture
-              ><source srcset="img/press.webp" type="image/webp" />
-              <img class="promo__text-img" src="img/press.png" alt=""
-            /></picture>
           </div>
+        </section>
 
-          <div>
-            <picture
-              ><source srcset="img/my-photo.webp" type="image/webp" />
-              <img
-                class="promo__img"
-                src="img/my-photo.png"
-                alt="Панищев Владислав - веб разработчик"
-            /></picture>
+        <!-- RESULT -->
+        <section>
+          <div class="result">
+            <div class="container">
+              <h3 class="title title__result">5 принципов моей работы</h3>
+              <dl class="result__inner">
+                <div class="result__block">
+                  <div class="result__icon">
+                    <svg>
+                      <use xlink:href="#speed"></use>
+                    </svg>
+                  </div>
+                  <dt class="result__title">Быстродействие</dt>
+                  <dd class="result__subtitle">
+                    Максимально быстрая загрузка и&nbsp;работа сайта экономит
+                    пользователю время и&nbsp;нервы, поэтому является одним
+                    из&nbsp;моих главных приоритетов при верстке.
+                  </dd>
+                </div>
+
+                <div class="result__block">
+                  <div class="result__icon">
+                    <svg>
+                      <use xlink:href="#semantics"></use>
+                    </svg>
+                  </div>
+                  <dt class="result__title">Семантика</dt>
+                  <dd class="result__subtitle">
+                    Правильная семантическая вёрстка делает сайт доступным для
+                    людей с&nbsp;ограниченными возможностями, а&nbsp;так&nbsp;же
+                    позволяет лучше ранжировать и&nbsp;продвигать сайт
+                    в&nbsp;поисковой выдаче.
+                  </dd>
+                </div>
+
+                <div class="result__block">
+                  <div class="result__icon">
+                    <svg>
+                      <use xlink:href="#responsive"></use>
+                    </svg>
+                  </div>
+                  <dt class="result__title">Адаптивность</dt>
+                  <dd class="result__subtitle">
+                    Позволяет одинаково хорошо отображать контент сайта
+                    на&nbsp;всех возможных устройствах&nbsp;&mdash;
+                    от&nbsp;смартфона до&nbsp;широкоформатных мониторов.
+                  </dd>
+                </div>
+
+                <div class="result__block">
+                  <div class="result__icon">
+                    <svg>
+                      <use xlink:href="#intuitive"></use>
+                    </svg>
+                  </div>
+                  <dt class="result__title">Удобство</dt>
+                  <dd class="result__subtitle">
+                    Интуитивно понятный интерфейс даёт возможность комфортно
+                    пользоваться сайтом и&nbsp;не&nbsp;ломать голову о&nbsp;том,
+                    куда кликать, свайпать, переходить.
+                  </dd>
+                </div>
+
+                <div class="result__block">
+                  <div class="result__icon">
+                    <svg>
+                      <use xlink:href="#browser"></use>
+                    </svg>
+                  </div>
+                  <dt class="result__title">Кроссбраузерность</dt>
+                  <dd class="result__subtitle">
+                    Позволяет одинаково хорошо отображать содержимое сайта
+                    во&nbsp;всех популярных браузерах. Является важным
+                    показателем как для поисковых систем, так
+                    и&nbsp;пользовательской аудитории.
+                  </dd>
+                </div>
+              </dl>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </article>
 
-    <!-- ABOUT -->
-    <section class="about">
-      <div class="container about__container"></div>
-
-      <div class="about__inner">
-        <div class="about__text">
-          <div class="title title__about">Обо мне</div>
-          <p>
-            Я из Калуги, люблю программировать и испытываю настоящую страсть к
-            удобному и минималистичному UX/UI, которые сочетают в себе простоту
-            и привлекательность и в то же время являются динамичными и
-            интуитивно понятными пользователю.
-          </p>
-
-          <p>
-            Пишу на JavaScript и TypeScript. В качестве библиотеки использую
-            React. Cвободное время провожу со своей семьей, занимаюсь изучением
-            новых технологий и развиваю абстрактное мышление
-            <i class="fa-regular fa-face-meh"></i>
-          </p>
-          <div class="title title__stack">Мой основной стек</div>
-          <div class="about__icons">
-            <svg>
-              <use xlink:href="img/sprite.svg#html"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="img/sprite.svg#css"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="img/sprite.svg#javascript"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="img/sprite.svg#typescript"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="img/sprite.svg#react"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="img/sprite.svg#sass"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="img/sprite.svg#figma"></use>
-            </svg>
-          </div>
-        </div>
-
-        <div class="about__photo">
-          <picture
-            ><source srcset="img/my-family.webp" type="image/webp" />
-            <img
-              class="about__img"
-              src="img/my-family.png"
-              width="600"
-              alt="Моя семья"
-          /></picture>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESULT -->
-    <section>
-      <div class="result">
+      <!-- PORTFOLIO -->
+      <section class="portfolio" id="portfolio">
         <div class="container">
-          <div class="title title__result">5 принципов моей работы</div>
-          <div class="result__inner">
-            <div class="result__block">
-              <div class="result__icon">
-                <svg>
-                  <use xlink:href="img/sprite.svg#speed"></use>
-                </svg>
-              </div>
-              <div class="result__title">Максимальная скорость загрузки</div>
-              <div class="result__subtitle">
-                Экономит пользователю время и нервы, поэтому является одним из
-                моих главных приоритетов при создании продукта.
-              </div>
-            </div>
+          <h2 class="title title__portfolio">портфолио</h2>
+          <nav class="nav nav__portfolio">
+            <ul>
+              <li class="nav__list nav__list-portfolio">
+                <a class="nav__link nav__link-portfolio" href="#">Все работы</a>
+              </li>
+              <li class="nav__list nav__list-portfolio">
+                <a class="nav__link nav__link-portfolio" href="#">Лендинг</a>
+              </li>
+              <li class="nav__list nav__list-portfolio">
+                <a class="nav__link nav__link-portfolio" href="#"
+                  >Интернет магазин</a
+                >
+              </li>
+              <li class="nav__list nav__list-portfolio">
+                <a class="nav__link nav__link-portfolio" href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
 
-            <div class="result__block">
-              <div class="result__icon">
-                <svg>
-                  <use xlink:href="img/sprite.svg#responsive"></use>
-                </svg>
+          <ul class="portfolio__inner">
+            <li class="portfolio__item" tabindex="0">
+              <figure>
+                <picture>
+                  <source srcset="img/work1.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/work1.png" alt="" />
+                </picture>
+              </figure>
+              <div class="portfolio__content">
+                <p class="portfolio__descr">Описание работы</p>
+                <button class="btn btn__portfolio">Подробнее</button>
               </div>
-              <div class="result__title">
-                Адаптивность под все возможные устройства
-              </div>
-              <div class="result__subtitle">
-                Продукт, который получит пользователь будет работать на любом
-                возможном устройстве от смартфона до телевизора.
-              </div>
-            </div>
+            </li>
 
-            <div class="result__block">
-              <div class="result__icon">
-                <svg>
-                  <use xlink:href="img/sprite.svg#intuitive"></use>
-                </svg>
+            <li class="portfolio__item" tabindex="0">
+              <figure>
+                <picture>
+                  <source srcset="img/work2.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/work2.png" alt="" />
+                </picture>
+              </figure>
+              <div class="portfolio__content">
+                <p class="portfolio__descr">Описание работы</p>
+                <button class="btn btn__portfolio">Подробнее</button>
               </div>
-              <div class="result__title">Интуитивно понятный интерфейс</div>
-              <div class="result__subtitle">
-                Всё самое необходимое находится в зоне видимости пользователя,
-                поэтому не нужно будет ломать голову куда кликать, свайпать и
-                переходить.
-              </div>
-            </div>
+            </li>
 
-            <div class="result__block">
-              <div class="result__icon">
-                <svg>
-                  <use xlink:href="img/sprite.svg#dynamic"></use>
-                </svg>
+            <li class="portfolio__item" tabindex="0">
+              <figure>
+                <picture>
+                  <source srcset="img/work3.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/work3.png" alt="" />
+                </picture>
+              </figure>
+              <div class="portfolio__content">
+                <p class="portfolio__descr">Описание работы</p>
+                <button class="btn btn__portfolio">Подробнее</button>
               </div>
-              <div class="result__title">Динамика при взаимодействии</div>
-              <div class="result__subtitle">
-                Никакой статики, только лёгка приятная динамика, которая не
-                бросается в глаза и оживляет web-страницу.
-              </div>
-            </div>
+            </li>
 
-            <div class="result__block">
-              <div class="result__icon">
-                <svg>
-                  <use xlink:href="img/sprite.svg#minimalistic"></use>
-                </svg>
+            <li class="portfolio__item" tabindex="0">
+              <figure>
+                <picture>
+                  <source srcset="img/work3.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/work3.png" alt="" />
+                </picture>
+              </figure>
+              <div class="portfolio__content">
+                <p class="portfolio__descr">Описание работы</p>
+                <button class="btn btn__portfolio">Подробнее</button>
               </div>
-              <div class="result__title">Привлекательный минимализм</div>
-              <div class="result__subtitle">
-                Минимализм способен придать любому продукту солидности и
-                постоянно держать его в тренде.
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PORTFOLIO -->
-    <section class="portfolio">
-      <div class="container">
-        <div class="title title__portfolio">портфолио</div>
-        <div class="nav nav__portfolio">
-          <a class="nav__portfolio-link" href="#">Все работы</a>
-          <a class="nav__portfolio-link" href="#">Вёрстка и логика</a>
-          <a class="nav__portfolio-link" href="#">Web-приложения</a>
-          <a class="nav__portfolio-link" href="#">Игры</a>
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="title title__contact1">Контакты</h2>
+
+          <ul class="contact__inner">
+            <li class="contact__block-form">
+              <form class="form form__contact" id="write-me" action="#">
+                <h3 class="title title__contact2">Написать мне</h3>
+                <input required placeholder="Ваше имя" type="text" />
+                <input required placeholder="Ваш e-mail" type="email" />
+                <textarea placeholder="Ваше сообщение" name="text"></textarea>
+
+                <button class="btn btn__form">Отправить</button>
+              </form>
+            </li>
+
+            <li class="contact__block-message">
+              <p class="contact__descr">
+                Если у&nbsp;вас возникли вопросы, вы&nbsp;можете написать мне,
+                и&nbsp;я&nbsp;отвечу вам в&nbsp;самое ближайшее время.
+              </p>
+
+              <nav class="social social__contact">
+                <ul>
+                  <li class="social__list social__list-contact">
+                    <a
+                      class="social__link social__link-contact"
+                      target="_blank"
+                      href="https://github.com/vladpanishev"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+
+                  <li class="social__list social__list-contact">
+                    <a
+                      class="social__link social__link-contact"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+
+                  <li class="social__list social__list-contact">
+                    <a
+                      class="social__link social__link-contact"
+                      target="_blank"
+                      href="https://t.me/vladpanishev"
+                    >
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                  </li>
+
+                  <li class="social__list social__list-contact">
+                    <a
+                      class="social__link social__link-contact"
+                      target="_blank"
+                      href="https://twitter.com/vlad_panishev"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li class="social__list social__list-contact">
+                    <a
+                      class="social__link social__link-contact"
+                      target="_blank"
+                      href="https://www.instagram.com/vladpanishev/"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <figure>
+                <picture>
+                  <source srcset="img/message.png" type="image/webp" />
+                  <img
+                    class="contact__img"
+                    src="img/message.png"
+                    alt="Ваше сообщение для Панищева Владислава"
+                  />
+                </picture>
+              </figure>
+            </li>
+          </ul>
         </div>
-
-        <div class="portfolio__inner">
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="../img/work1.png" alt="" />
-            <div class="portfolio__content">
-              <div class="portfolio__descr">Описание работы</div>
-              <button class="btn btn__portfolio">Подробнее</button>
-            </div>
-          </div>
-
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="../img/work2.png" alt="" />
-            <div class="portfolio__content">
-              <div class="portfolio__descr">Описание работы</div>
-              <button class="btn btn__portfolio">Подробнее</button>
-            </div>
-          </div>
-
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="../img/work3.png" alt="" />
-            <div class="portfolio__content">
-              <div class="portfolio__descr">Описание работы</div>
-              <button class="btn btn__portfolio">Подробнее</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact">
-      <div class="container">
-        <div class="title title__contact1">Контакты</div>
-
-        <div class="contact__inner">
-          <form class="form" action="#">
-            <div class="title title__contact2">Написать мне</div>
-            <input required placeholder="Ваше имя" type="text" />
-            <input required placeholder="Ваш e-mail" type="email" />
-            <textarea placeholder="Ваше сообщение" name="text"></textarea>
-
-            <button class="btn btn__form">Отправить</button>
-          </form>
-          <div class="contact__message">
-            <div class="contact__subtitle">
-              Если у вас возникли вопросы, вы можете написать мне, и я отвечу
-              вам в самое ближайшее время.
-            </div>
-
-            <div class="social social__contact">
-              <a
-                class="social__contact-link"
-                target="_blank"
-                href="https://github.com/vladpanishev"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-
-              <a
-                class="social__contact-link"
-                target="_blank"
-                href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-
-              <a
-                class="social__contact-link"
-                target="_blank"
-                href="https://t.me/vladpanishev"
-              >
-                <i class="fa-brands fa-telegram"></i>
-              </a>
-
-              <a
-                class="social__contact-link"
-                target="_blank"
-                href="https://twitter.com/vlad_panishev"
-              >
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-
-              <a
-                class="social__contact-link"
-                target="_blank"
-                href="https://www.instagram.com/vladpanishev/"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </div>
-
-            <picture>
-              <source srcset="../img/message.png" type="image/webp" />
-              <img
-                class="contact__img"
-                src="../img/"
-                alt="Письменные конверты"
-              />
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="footer__block footer__block-text1">
-        GitHub репозиторий этого сайта
-        <picture>
-          <source srcset="../img/arrow.png" type="image/webp" />
-          <img src="../img/arrow.png" alt="" />
-        </picture>
-        <a href="https://github.com/vladpanishev/myPortfolio" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-      </div>
+      <ul class="footer__inner">
+        <li class="footer__block1">
+          GitHub репозиторий этого сайта
+          <a href="https://github.com/vladpanishev/myPortfolio" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
 
-      <div class="footer__block footer__block-text2">
-        Дизайн, вёрстку и логику сайта выполнил:<br />
-        Панищев Владислав © 2022
-      </div>
+        <li class="footer__block2">
+          Дизайн, вёрстку и логику сайта выполнил:<br />
+          Панищев Владислав © 2022
+        </li>
 
-      <div class="footer__block footer__block-text3">
-        "Болтовня ничего не стоит. Покажите мне код."<br /><br />
+        <li class="footer__block3">
+          "Болтовня ничего не стоит. Покажите мне код."<br /><br />
 
-        <span>— Linus Torvalds (Создатель ядра Linux)</span>
-      </div>
+          <span>— Linus Torvalds (Создатель ядра Linux)</span>
+        </li>
+      </ul>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

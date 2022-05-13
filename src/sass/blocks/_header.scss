@@ -1,12 +1,14 @@
 .header {
   display: flex;
   align-items: center;
-  height: 70px;
+  padding: 13px 0;
   &__inner {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__logo {
     text-align: center;
     text-transform: uppercase;
@@ -17,13 +19,18 @@
     &:hover {
       color: $grey-color;
     }
+    &-burger {
+      display: none;
+    }
   }
 }
 
 // @media
 @include desktop {
   .header {
-    height: 62px;
+    &__inner {
+      max-width: 962px;
+    }
     &__logo {
       font-size: 38px;
     }
@@ -32,10 +39,10 @@
 
 @include laptop {
   .header {
-    height: 49px;
     &__inner {
-      justify-content: space-between;
+      max-width: 738px;
     }
+    padding: 9px 0;
     &__logo {
       font-size: 28px;
     }
@@ -44,10 +51,45 @@
 
 @include tablet {
   .header {
-    height: 40px;
+    &__inner {
+      max-width: 546px;
+    }
+    padding: 9px 0;
     &__logo {
       font-size: 21px;
       line-height: 18px;
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    position: relative;
+
+    padding: 6px 0;
+    &__inner {
+      justify-content: flex-end;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      font-size: 16px;
+      line-height: 16px;
+
+      transform: translateX(-78%) translateY(-50%);
+      &-burger {
+        position: absolute;
+        top: 20px;
+
+        display: block;
+
+        font-size: 30px;
+
+        transform: translateX(-50%) translateY(-50%);
+      }
     }
   }
 }

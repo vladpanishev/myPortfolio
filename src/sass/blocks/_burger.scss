@@ -1,0 +1,51 @@
+.burger {
+  display: none;
+}
+
+@include mobile {
+  .burger {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+
+    display: block;
+    width: 20px;
+    height: 12px;
+
+    transform: translateY(-50%);
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin-bottom: 2px;
+
+      border-radius: 1px;
+      background-color: $grey-color;
+
+      transition: 0.3s all;
+
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-active {
+      span {
+        &:nth-child(1) {
+          margin-bottom: -2px;
+
+          transform: translateY(3px) rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+  }
+}

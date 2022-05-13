@@ -1,77 +1,123 @@
 .contact {
-  height: 620px;
-  padding: 45px 0;
-  &__subtitle {
-    margin-bottom: 30px;
-    font-size: 18px;
+  padding-bottom: 90px;
+
+  &__inner {
+    padding-left: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__block-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 680px;
+
+    align-items: center;
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+
+    font-size: 24px;
     text-align: center;
     color: $grey-color;
     font-family: $second-font;
   }
-  &__inner {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  &__message {
-    margin-left: 164px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
 
   &__img {
-    width: 350px;
+    width: 340px;
   }
 }
 
 // @media
 @include desktop {
   .contact {
-    height: 560px;
-    padding: 20px 0;
-    &__message {
-      margin-left: 75px;
+    &__inner {
+      width: 962px;
+    }
+    &__block-message {
+      width: 500px;
+    }
+    &__descr {
+      font-size: 21px;
+      margin-bottom: 30px;
     }
   }
-}
 
-@include laptop {
-  .contact {
-    height: 500px;
-    padding: 0;
-    &__inner {
-      margin: 50px 20px 0;
-    }
-    &__message {
-      margin-left: 48px;
-    }
-    &__subtitle {
-      font-size: 16px;
-    }
-    &__img {
-      width: 324px;
+  @include laptop {
+    .contact {
+      padding-bottom: 70px;
+
+      &__inner {
+        padding-left: 0;
+        width: 738px;
+      }
+
+      &__block-message {
+        width: 350px;
+      }
+
+      &__descr {
+        font-size: 16px;
+      }
+
+      &__img {
+        width: 317px;
+      }
     }
   }
-}
 
-@include tablet {
-  .contact {
-    height: 390px;
-    &__inner {
-      margin: 40px 10px 0;
+  @include tablet {
+    .contact {
+      &__inner {
+        width: 546px;
+      }
+      &__block-message {
+        width: 263px;
+      }
+
+      &__descr {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+      }
+
+      &__img {
+        width: 218px;
+        transform: translateY(13px);
+      }
     }
-    &__message {
-      margin-left: 40px;
-    }
-    &__subtitle {
-      margin-bottom: 20px;
-      font-size: 12px;
-    }
-    &__img {
-      width: 236px;
+  }
+
+  @include mobile {
+    .contact {
+      &__inner {
+        width: 290px;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__block-form {
+        order: 2;
+      }
+
+      &__block-message {
+        position: relative;
+        order: 1;
+
+        width: 280px;
+        margin-left: 0;
+      }
+
+      &__descr {
+        margin-bottom: 20px;
+      }
+
+      &__img {
+        display: none;
+      }
     }
   }
 }

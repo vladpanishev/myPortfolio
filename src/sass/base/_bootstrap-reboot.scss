@@ -72,6 +72,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 4px solid #337eee;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -175,14 +179,18 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 ol ol,
@@ -197,7 +205,7 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   margin-left: 0;
 }
 
@@ -336,6 +344,7 @@ label {
 }
 
 button {
+  outline: none;
   border: none;
   border-radius: 0;
 }

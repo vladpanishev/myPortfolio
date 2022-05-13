@@ -11,7 +11,6 @@ const html = require('./task/html.js');
 const scss = require('./task/scss.js');
 const js = require('./task/js.js');
 const img = require('./task/img.js');
-const svg = require('./task/svg.js');
 const font = require('./task/font.js');
 
 // Сервер browserSync
@@ -34,7 +33,7 @@ const watcher = () => {
 };
 
 // Сборка проекта
-const build = series(clear, parallel(html, scss, js, img, font, svg));
+const build = series(clear, parallel(html, scss, js, img, font));
 
 // Сервер и наблюдение
 const dev = series(build, parallel(watcher, server));
@@ -44,7 +43,6 @@ exports.html = html; // отдельный вызов HTML-задач
 exports.scss = scss; // отдельный вызов CSS-задач
 exports.js = js; // отдельный вызов JavaScript-задач
 exports.img = img; // отдельный вызов img-задач
-exports.svg = svg; // отдельный вызов svg-задач
 exports.font = font; // отдельный вызов font-задач
 
 // Задачи сборки

@@ -1,15 +1,35 @@
 .social {
-  display: flex;
-  justify-content: center;
-  &__header {
-    &-link {
-      @include social-link;
-    }
+  ul {
+    display: flex;
+    justify-content: center;
   }
   &__contact {
     margin-bottom: 15px;
-    &-link {
-      @include social-link;
+  }
+  &__burger {
+    display: none;
+  }
+  &__list {
+    margin-left: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      color: $grey-color;
+      animation-name: zoom;
+      animation-play-state: running;
+      animation-iteration-count: 1;
+      animation-duration: 0.1s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+  &__link {
+    font-size: 30px;
+    color: $grey-color;
+    transition: 0.1s all;
+    &:hover {
+      color: $grey-color;
     }
   }
 }
@@ -17,33 +37,29 @@
 // @media
 @include desktop {
   .social {
-    &__header {
-      &-link {
-        margin-right: 12px;
-        font-size: 25px;
-      }
+    &__list {
+      margin-left: 12px;
     }
-    &__contact {
-      &-link {
-        margin-right: 12px;
-        font-size: 25px;
-      }
+    &__link {
+      font-size: 25px;
     }
   }
 }
 
 @include laptop {
   .social {
-    &__header {
-      &-link {
-        font-size: 19px;
-        margin-right: 10px;
+    &__list {
+      margin-left: 10px;
+      &:hover {
+        animation: none;
       }
     }
-    &__contact {
-      &-link {
+    &__link {
+      &-header {
+        font-size: 19px;
+      }
+      &-contact {
         font-size: 22px;
-        margin-right: 10px;
       }
     }
   }
@@ -51,15 +67,52 @@
 
 @include tablet {
   .social {
-    &__header {
-      &-link {
-        font-size: 15px;
-        margin-right: 8px;
-      }
-    }
     &__contact {
       margin-bottom: 40px;
-      &-link {
+    }
+    &__list {
+      margin-left: 8px;
+    }
+    &__link {
+      &-header {
+        font-size: 15px;
+      }
+      &-contact {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .social {
+    &__contact {
+      position: absolute;
+      bottom: -293px;
+      right: 78px;
+      margin-bottom: 0;
+    }
+    &__burger {
+      display: block;
+      ul {
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 0;
+      }
+    }
+    &__list {
+      &-header {
+        margin-left: 5px;
+      }
+      &-burger {
+        margin-left: 9px;
+      }
+    }
+    &__link {
+      &-header {
+        font-size: 11px;
+      }
+      &-burger {
         font-size: 18px;
       }
     }

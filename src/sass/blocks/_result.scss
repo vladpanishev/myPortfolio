@@ -1,31 +1,34 @@
 .result {
-  padding-bottom: 45px;
-  min-height: 350px;
+  padding-bottom: 90px;
   &__inner {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__block {
-    margin-right: 20px;
-    padding: 10px;
+    width: 208px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
-    &:last-child {
-      margin-right: 0;
+    justify-content: flex-start;
+    box-shadow: 0 0 5px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
+    &:first-child {
+      margin-left: 0;
     }
   }
   &__icon {
+    width: 60px;
+    height: 60px;
     margin: 0 auto;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
     svg {
       fill: $grey-color;
-      width: 60px;
-      height: 60px;
+      width: 100%;
+      height: 100%;
     }
   }
   &__title {
@@ -45,17 +48,23 @@
 // @media
 @include desktop {
   .result {
-    min-height: 300px;
+    padding-bottom: 70px;
+    &__inner {
+      width: 962px;
+    }
     &__block {
-      width: 180px;
-      margin-right: 15px;
+      width: 168px;
+      padding: 10px;
     }
     &__icon {
       width: 45px;
-      height: 55px;
+      height: 45px;
     }
     &__title {
+      margin-bottom: 12px;
+
       font-size: 15px;
+      line-height: 17px;
     }
     &__subtitle {
       font-size: 10px;
@@ -65,35 +74,75 @@
 
 @include laptop {
   .result {
-    padding-bottom: 42px;
+    padding-bottom: 70px;
     &__inner {
-      justify-content: center;
-      flex-wrap: wrap;
+      width: 738px;
+      justify-content: space-evenly;
     }
     &__block {
-      width: 200px;
-      margin-bottom: 15px;
-      margin-right: 15px;
+      width: 190px;
+      margin-bottom: 22px;
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 @include tablet {
   .result {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+    &__inner {
+      width: 546px;
+    }
     &__block {
       width: 150px;
+      padding: 8px;
     }
     &__icon {
+      margin-bottom: 5px;
       width: 35px;
-      height: 45px;
+      height: 35px;
     }
     &__title {
       margin-bottom: 10px;
       font-size: 13px;
+      line-height: 14px;
     }
     &__subtitle {
-      font-size: 8px;
+      font-size: 9px;
+    }
+  }
+}
+
+@include mobile {
+  .result {
+    padding-bottom: 40px;
+    &__inner {
+      width: 290px;
+    }
+    &__block {
+      margin-bottom: 8px;
+      width: 135px;
+      box-shadow: 0 0 3px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
+      &:nth-child(4) {
+        margin-bottom: 8px;
+      }
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+    }
+    &__title {
+      margin-bottom: 8px;
+      font-size: 10px;
+      line-height: 11px;
+    }
+    &__subtitle {
+      font-size: 7px;
     }
   }
 }
