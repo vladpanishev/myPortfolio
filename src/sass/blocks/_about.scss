@@ -1,17 +1,18 @@
 .about {
-  padding: 55px 0 30px;
+  padding: 55px 0 40px;
   &__inner {
-    margin: 0 auto;
     display: flex;
+
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    margin: 0 auto;
   }
 
   &__block-text {
     position: relative;
 
     width: 675px;
-    padding: 15px;
+    padding: 35px 15px 15px;
 
     font-weight: 300;
     font-size: 19px;
@@ -19,17 +20,14 @@
     color: $grey-color;
 
     background-color: #323436;
-    box-shadow: 0 -0px 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
-
+    box-shadow: 0 0px 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
     p {
-      &:nth-child(1) {
+      &:nth-child(2) {
         margin-bottom: 20px;
       }
-
-      &:nth-child(2) {
-        margin-bottom: 30px;
+      &:nth-child(3) {
+        margin-bottom: 20px;
       }
-
       i {
         font-size: 16px;
         color: $grey-color;
@@ -40,34 +38,30 @@
   &__icons {
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
   }
 
   svg {
-    width: 34px;
-    height: 30px;
-    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
 
     fill: $grey-color;
-
     &:nth-child(1) {
-      transform: translateX(2px);
+      transform: scale(0.85);
     }
-
-    &:nth-child(2) {
-      transform: scale(1.15);
+    &:nth-child(3) {
+      transform: scale(0.85);
     }
-
-    &:last-child {
-      margin: 0;
-
-      transform: translateX(-6px);
+    &:nth-child(8) {
+      transform: scale(1.1);
+    }
+    &:first-child {
+      margin-left: 0;
     }
   }
 
   &__img {
-    width: 350px;
-    height: 379px;
+    width: 430px;
   }
 
   &__img2 {
@@ -81,6 +75,7 @@
     &__inner {
       max-width: 962px;
     }
+
     &__block-text {
       width: 572px;
       margin-right: 0;
@@ -88,112 +83,137 @@
       font-size: 16px;
       line-height: 24px;
 
+      box-shadow: 0 0px 3px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
       p {
         &:nth-child(2) {
-          margin-bottom: 24px;
+          margin-bottom: 18px;
+        }
+        &:nth-child(3) {
+          margin-bottom: 18px;
         }
         i {
           font-size: 14px;
         }
       }
     }
+
+    svg {
+      width: 35px;
+      height: 35px;
+      margin-left: 22px;
+    }
+
     &__img {
-      width: 319px;
-      height: 341px;
+      width: 365px;
     }
   }
 }
 
 @include laptop {
   .about {
-    padding: 45px 0 20px;
+    padding: 45px 0 30px;
     &__inner {
       max-width: 738px;
     }
+
     &__block-text {
       width: 464px;
+      padding: 25px 15px 15px;
 
       font-size: 12px;
       line-height: 19px;
-
       p {
         &:nth-child(2) {
-          margin-bottom: 18px;
+          margin-bottom: 13px;
+        }
+        &:nth-child(3) {
+          margin-bottom: 13px;
         }
         i {
           font-size: 12px;
         }
       }
     }
-    &__img {
-      width: 233px;
-      height: 253px;
-    }
 
     svg {
-      width: 22px;
-      height: 22px;
+      width: 30px;
+      height: 30px;
+      margin-left: 15px;
+    }
+
+    &__img {
+      width: 260px;
     }
   }
 }
 
 @include tablet {
   .about {
-    padding: 30px 0 10px;
+    padding: 30px 0 20px;
     &__inner {
       max-width: 546px;
     }
+
     &__block-text {
-      padding: 10px;
       width: 361px;
+      padding: 17px 10px 10px;
+
       font-size: 9px;
       line-height: 14px;
-
       p {
         &:nth-child(2) {
-          margin-bottom: 13px;
+          margin-bottom: 10px;
         }
-
+        &:nth-child(3) {
+          margin-bottom: 10px;
+        }
         i {
           font-size: 9px;
         }
       }
     }
 
-    &__img {
-      width: 168px;
-      height: 183px;
-    }
-    &__icins {
-      margin-bottom: 0;
+    svg {
+      width: 21px;
+      height: 21px;
+      margin-left: 13px;
     }
 
-    svg {
-      width: 14px;
-      height: 14px;
-      margin-right: 13px;
+    &__img {
+      width: 176px;
+    }
+
+    &__icons {
+      margin-bottom: 0;
     }
   }
 }
 
 @include mobile {
   .about {
-    padding-bottom: 8px;
+    padding-bottom: 20px;
     &__inner {
       flex-direction: column;
       max-width: 290px;
-      align-items: center;
     }
+
     &__block-text {
       width: 308px;
+      margin-bottom: 15px;
 
-      font-size: 9px;
-      line-height: 14px;
+      font-size: 8px;
+      line-height: 13px;
       p {
         i {
           font-size: 9px;
         }
       }
+    }
+
+    svg {
+      width: 19px;
+      height: 19px;
+      margin-left: 11px;
     }
 
     &__img {

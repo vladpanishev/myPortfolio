@@ -5,7 +5,9 @@
     align-items: center;
   }
 
-  &__list {
+  li {
+    display: flex;
+    align-items: center;
     margin-left: 40px;
     &:first-child {
       margin-left: 0;
@@ -13,11 +15,15 @@
   }
 
   &__portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
   }
 
   &__link {
     position: relative;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
@@ -74,6 +80,7 @@
     &__portfolio {
       margin-bottom: 25px;
     }
+
     &__link {
       font-size: 13px;
       &:hover {
@@ -87,18 +94,19 @@
 
 @include tablet {
   .nav {
-    &__portfolio {
-      margin-bottom: 20px;
-    }
-
-    &__list {
-      &-header {
+    &__header {
+      li {
         margin-left: 20px;
       }
-      &-portfolio {
+    }
+
+    &__portfolio {
+      margin-bottom: 20px;
+      li {
         margin-left: 25px;
       }
     }
+
     &__link {
       font-size: 10px;
     }
@@ -124,7 +132,6 @@
       background-color: rgb(49, 51, 53);
 
       transition: 0.3s all;
-
       &-active {
         right: 0;
       }
@@ -134,24 +141,15 @@
         justify-content: flex-start;
         margin-bottom: 26px;
       }
-    }
-
-    &__portfolio {
-      margin-bottom: 10px;
-    }
-
-    &__list {
-      &-header {
+      li {
         margin-bottom: 25px;
         margin-left: 0;
         &:last-child {
           margin-bottom: 0;
         }
-
         &::before {
           display: none;
         }
-
         i {
           display: inline-block;
           margin-right: 10px;
@@ -159,6 +157,10 @@
           font-size: 15px;
         }
       }
+    }
+
+    &__portfolio {
+      margin-bottom: 10px;
     }
 
     &__link {
@@ -180,7 +182,6 @@
       font-size: 8px;
       color: rgb(244, 237, 226, 0.27);
       font-style: italic;
-
       span {
         display: block;
 

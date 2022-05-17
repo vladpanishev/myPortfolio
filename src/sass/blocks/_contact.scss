@@ -2,20 +2,19 @@
   padding-bottom: 90px;
 
   &__inner {
-    padding-left: 25px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-left: 25px;
+    margin: 0 auto;
   }
 
   &__block-message {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 680px;
-
     align-items: center;
+    width: 680px;
   }
 
   &__descr {
@@ -38,22 +37,24 @@
     &__inner {
       width: 962px;
     }
+
     &__block-message {
       width: 500px;
     }
+
     &__descr {
-      font-size: 21px;
       margin-bottom: 30px;
+
+      font-size: 21px;
     }
   }
 
   @include laptop {
     .contact {
       padding-bottom: 70px;
-
       &__inner {
-        padding-left: 0;
         width: 738px;
+        padding-left: 0;
       }
 
       &__block-message {
@@ -75,6 +76,7 @@
       &__inner {
         width: 546px;
       }
+
       &__block-message {
         width: 263px;
       }
@@ -87,6 +89,7 @@
 
       &__img {
         width: 218px;
+
         transform: translateY(13px);
       }
     }
@@ -95,10 +98,11 @@
   @include mobile {
     .contact {
       &__inner {
-        width: 290px;
         flex-direction: column;
         align-items: center;
+        width: 290px;
       }
+
       &__block-form {
         order: 2;
       }
@@ -112,7 +116,7 @@
       }
 
       &__descr {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
       }
 
       &__img {

@@ -1,61 +1,75 @@
 .title {
   text-align: center;
   color: $black-color;
-  background-color: $grey-color;
   text-transform: uppercase;
   font-family: $second-font;
+
+  background-color: $grey-color;
   &__about {
     position: absolute;
     top: -26px;
     left: 11px;
+
     width: 155px;
+
     font-weight: 900;
     line-height: 34px;
     font-size: 30px;
+
     transform: rotate(-3deg);
   }
+
   &__stack {
+    width: 243px;
     margin: 0 auto;
-    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 40px;
+
     font-weight: 700;
-    line-height: 20px;
-    font-size: 14px;
-    width: 179px;
+    font-size: 16px;
   }
+
   &__result {
+    width: 345px;
     margin: 0 auto;
     margin-bottom: 25px;
+
     font-weight: 700;
-    line-height: 26px;
-    font-size: 20px;
-    width: 303px;
+    font-size: 19px;
   }
+
   &__portfolio {
     width: 310px;
     margin: 0 auto;
     margin-bottom: 20px;
+
     font-weight: 900;
     line-height: 45px;
     font-size: 45px;
   }
+
   &__contact1 {
     width: 259px;
     margin: 0 auto;
     margin-bottom: 80px;
+
     font-weight: 900;
     line-height: 45px;
     font-size: 45px;
   }
+
   &__contact2 {
     position: absolute;
     top: -22px;
     left: -8px;
+
     width: 206px;
     margin-bottom: 20px;
+
     font-weight: 900;
     line-height: 26px;
     font-size: 25px;
+
     transform: rotate(-2deg);
   }
 }
@@ -66,26 +80,36 @@
     &__about {
       top: -20px;
       left: 9px;
+
       width: 137px;
+
       line-height: 28px;
       font-size: 27px;
     }
+
     &__stack {
-      width: 165px;
-      font-size: 13px;
+      width: 213px;
+      margin-top: 35px;
+      margin-bottom: 13px;
+      font-size: 14px;
     }
+
     &__result {
-      line-height: 22px;
+      width: 306px;
+
       font-size: 17px;
-      width: 259px;
     }
+
     &__portfolio {
       width: 248px;
+
       line-height: 36px;
       font-size: 35px;
     }
+
     &__contact1 {
       width: 206px;
+
       line-height: 36px;
       font-size: 35px;
     }
@@ -96,37 +120,49 @@
   .title {
     &__about {
       top: -18px;
+
       width: 117px;
+
       line-height: 25px;
       font-size: 23px;
     }
+
     &__stack {
-      margin: 14px auto;
-      line-height: 17px;
-      font-size: 10px;
-      width: 130px;
+      width: 156px;
+      margin-bottom: 11px;
+      margin-top: 25px;
+
+      font-size: 11px;
     }
+
     &__result {
+      width: 251px;
       margin-bottom: 25px;
-      line-height: 20px;
+
       font-size: 14px;
-      width: 230px;
     }
+
     &__portfolio {
       width: 209px;
+
       line-height: 32px;
       font-size: 30px;
     }
+
     &__contact1 {
       width: 175px;
       margin-bottom: 70px;
+
       line-height: 32px;
       font-size: 30px;
     }
+
     &__contact2 {
       top: -19px;
       left: -7px;
+
       width: 166px;
+
       line-height: 23px;
       font-size: 20px;
     }
@@ -137,38 +173,44 @@
   .title {
     &__about {
       top: -12px;
+
       width: 80px;
+
       line-height: 17px;
       font-size: 16px;
     }
     &__stack {
-      margin: 10px auto;
-      margin-top: 10px;
-      line-height: 13px;
+      width: 119px;
+      margin-bottom: 8px;
+      margin-top: 20px;
+
       font-size: 8px;
-      width: 103px;
     }
     &__result {
-      margin-bottom: 20px;
-      line-height: 16px;
+      width: 198px;
+      margin-bottom: 17px;
+
       font-size: 11px;
-      width: 168px;
     }
     &__portfolio {
       width: 171px;
+
       line-height: 27px;
       font-size: 24px;
     }
     &__contact1 {
       width: 142px;
       margin-bottom: 60px;
+
       line-height: 27px;
       font-size: 24px;
     }
     &__contact2 {
       top: -14px;
       left: -5px;
+
       width: 109px;
+
       line-height: 16px;
       font-size: 13px;
     }
@@ -179,37 +221,49 @@
   .title {
     &__about {
       top: -11px;
+
       width: 70px;
+
       line-height: 16px;
       font-size: 14px;
     }
+
     &__stack {
-      line-height: 12px;
+      width: 117px;
+      margin-bottom: 7px;
+
       font-size: 8px;
-      width: 101px;
     }
+
     &__result {
+      width: 171px;
       margin-bottom: 13px;
-      line-height: 14px;
+
       font-size: 10px;
-      width: 153px;
     }
+
     &__portfolio {
-      margin-bottom: 10px;
       width: 143px;
+      margin-bottom: 10px;
+
       line-height: 23px;
       font-size: 20px;
     }
+
     &__contact1 {
-      margin-bottom: 30px;
       width: 119px;
+      margin-bottom: 30px;
+
       line-height: 23px;
       font-size: 20px;
     }
+
     &__contact2 {
       top: -10px;
       left: -4px;
+
       width: 91px;
+
       line-height: 13px;
       font-size: 11px;
     }

@@ -16,8 +16,9 @@ const shorthand = require('gulp-shorthand'); // Переводит CSS-свой�
 const groupCssMediaQueries = require('gulp-group-css-media-queries'); // Показывает размер файла
 const sassGlob = require('gulp-sass-glob'); // Импортирование SASS-файлов через специальные маски (чтобы не импортировать каждый файл отдельно)
 const webpCss = require('gulp-webp-css'); // Позволяет использовать webp изображения в CSS
+const gulpif = require('gulp-if'); // Выбирает какие плагины будут работать во время разработки, а какие во время продакшена
 
-// Обработка SCSS
+// SCSS
 const scss = () => {
   return src(path.scss.src, { sourcemaps: app.isDev })
     .pipe(
@@ -31,13 +32,13 @@ const scss = () => {
     .pipe(sassGlob())
     .pipe(sass())
     .pipe(webpCss())
-    .pipe(autoprefixer())
+    .pipe(gulpif(app.isProd, autoprefixer()))
     .pipe(groupCssMediaQueries())
     .pipe(shorthand())
     .pipe(size({ title: 'style.css' }))
     .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(csso())
+    .pipe(gulpif(app.isProd, csso()))
     .pipe(size({ title: 'style.min.css' }))
     .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }));
 };

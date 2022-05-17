@@ -8,7 +8,7 @@ const app = require('../config/app.js');
 const plumber = require('gulp-plumber'); // Перехват ошибок и более наглядный их вывод
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
 
-// Обработка Font
+// Font
 const font = () => {
   return src(path.font.src)
     .pipe(

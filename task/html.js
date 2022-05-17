@@ -9,7 +9,7 @@ const plumber = require('gulp-plumber'); // Перехват ошибок и б�
 const notify = require('gulp-notify'); // Уведомление об ошибке в виде всплывающих сообщений
 const fileInclude = require('gulp-file-include'); // Подключение шаблонов @@include
 
-// Обработка HTML
+// HTML
 const html = (cb) => {
   return src(path.html.src)
     .pipe(

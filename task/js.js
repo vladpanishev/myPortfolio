@@ -10,8 +10,9 @@ const notify = require('gulp-notify'); // Уведомление об ошибк
 const babel = require('gulp-babel'); // babel - позволяет использовать все последние возможности JavaScript
 const uglify = require('gulp-uglify'); // минифицирует/сжимает JavaScript-код
 const rename = require('gulp-rename'); // Переименование файлов
+const gulpif = require('gulp-if'); // Выбирает какие плагины будут работать во время разработки, а какие во время продакшенаgulp
 
-// Обработка JavaScript
+// JavaScript
 const js = () => {
   return src(path.js.src, { sourcemaps: app.isDev })
     .pipe(
@@ -24,7 +25,7 @@ const js = () => {
     )
     .pipe(babel())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
+    .pipe(gulpif(app.isProd, uglify()))
     .pipe(dest(path.js.dest, { sourcemaps: app.isDev }));
 };
 

@@ -19,15 +19,14 @@
 
       background-color: rgba(255, 255, 255, 0);
       border: solid 1px #f4ede2;
-
       &:nth-child(2) {
         margin-bottom: 20px;
       }
-
       &::placeholder {
         color: $grey-color;
       }
     }
+
     textarea {
       width: 100%;
       min-height: 150px;
@@ -41,7 +40,6 @@
       border: solid 1px #f4ede2;
 
       resize: none;
-
       &::placeholder {
         color: $grey-color;
       }
@@ -54,6 +52,7 @@
   .form {
     &__contact {
       width: 300px;
+
       input {
         height: 45px;
 
@@ -73,12 +72,12 @@
   .form {
     &__contact {
       width: 220px;
+
       input {
         height: 35px;
         margin-bottom: 10px;
 
         font-size: 10px;
-
         &:nth-child(2) {
           margin-bottom: 10px;
         }
@@ -98,7 +97,6 @@
           margin-bottom: 10px;
 
           font-size: 10px;
-
           &:nth-child(2) {
             margin-bottom: 10px;
           }

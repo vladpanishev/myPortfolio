@@ -73,7 +73,7 @@
 }
 
 *:focus {
-  outline: 4px solid #337eee;
+  outline: 3px solid #337eee;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -303,7 +303,7 @@ kbd kbd {
 }
 
 figure {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 img,

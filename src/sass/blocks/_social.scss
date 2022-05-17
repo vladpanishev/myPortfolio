@@ -1,21 +1,25 @@
 .social {
-  ul {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__contact {
     margin-bottom: 15px;
   }
+
   &__burger {
     display: none;
   }
-  &__list {
+
+  li {
+    display: flex;
+    align-items: center;
     margin-left: 15px;
     &:first-child {
       margin-left: 0;
     }
     &:hover {
       color: $grey-color;
+
       animation-name: zoom;
       animation-play-state: running;
       animation-iteration-count: 1;
@@ -24,9 +28,11 @@
       animation-fill-mode: forwards;
     }
   }
+
   &__link {
     font-size: 30px;
     color: $grey-color;
+
     transition: 0.1s all;
     &:hover {
       color: $grey-color;
@@ -37,9 +43,10 @@
 // @media
 @include desktop {
   .social {
-    &__list {
+    li {
       margin-left: 12px;
     }
+
     &__link {
       font-size: 25px;
     }
@@ -48,12 +55,13 @@
 
 @include laptop {
   .social {
-    &__list {
+    li {
       margin-left: 10px;
       &:hover {
         animation: none;
       }
     }
+
     &__link {
       &-header {
         font-size: 19px;
@@ -67,12 +75,14 @@
 
 @include tablet {
   .social {
+    li {
+      margin-left: 8px;
+    }
+
     &__contact {
       margin-bottom: 40px;
     }
-    &__list {
-      margin-left: 8px;
-    }
+
     &__link {
       &-header {
         font-size: 15px;
@@ -90,30 +100,31 @@
       position: absolute;
       bottom: -293px;
       right: 78px;
+
       margin-bottom: 0;
     }
+
     &__burger {
-      display: block;
-      ul {
-        justify-content: center;
-        flex-direction: row;
-        margin-bottom: 0;
-      }
+      display: flex;
     }
-    &__list {
-      &-header {
+
+    &__header {
+      li {
         margin-left: 5px;
       }
-      &-burger {
-        margin-left: 9px;
-      }
     }
+
     &__link {
       &-header {
         font-size: 11px;
       }
       &-burger {
+        margin-left: 12px;
+
         font-size: 18px;
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
