@@ -2,7 +2,7 @@
   padding: 55px 0 65px;
 
   background-color: #fff;
-  &__inner {
+  &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,26 +11,28 @@
 
   &__block-text {
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     width: 567px;
   }
 
   &__name {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     font-size: 46px;
     font-weight: 900;
-    line-height: 35px;
+    line-height: 1;
   }
 
   &__title {
-    width: 565px;
     margin-bottom: 30px;
+    padding: 0.1em;
 
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    line-height: 56px;
+    line-height: 1;
     font-size: 50px;
     color: $grey-color;
 
@@ -38,13 +40,13 @@
   }
 
   &__subtitle {
-    margin-bottom: 35px;
+    margin-bottom: 70px;
 
-    line-height: 27px;
+    line-height: 1;
     font-style: italic;
     font-size: 29px;
     font-family: $second-font;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   &__btn {
@@ -55,14 +57,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 162px;
     height: 50px;
 
     text-align: center;
     font-weight: 500;
     font-family: $second-font;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 20px;
     color: $grey-color;
 
     background-color: $black-color;
@@ -79,54 +81,7 @@
   }
 
   &__img {
-    width: 450px;
-
-    transform: translateY(10px);
-  }
-
-  &__img2 {
-    display: none;
-  }
-}
-
-.principle {
-  display: flex;
-  flex-direction: column;
-  width: 181px;
-  margin-bottom: 76px;
-  padding: 8px;
-
-  align-items: center;
-
-  background-color: #efefef;
-  box-shadow: 0 0 3px rgb(0 0 0 / 40%), 0 3px 6px rgb(0 0 0 / 43%);
-  &__title {
-    margin-bottom: 10px;
-
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 23px;
-    font-size: 21px;
-    color: $black-color;
-    font-family: $second-font;
-  }
-
-  &__list {
-    padding-left: 0;
-    li {
-      margin-bottom: 2px;
-
-      color: $black-color;
-      font-weight: 500;
-      font-size: 14px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      i {
-        color: $black-color;
-      }
-    }
+    width: 500px;
   }
 }
 
@@ -134,7 +89,7 @@
 @include desktop {
   .promo {
     padding: 45px 0 55px;
-    &__inner {
+    &__wrapper {
       max-width: 962px;
     }
 
@@ -143,31 +98,25 @@
     }
 
     &__name {
-      margin-bottom: 12px;
-
       font-size: 38px;
-      line-height: 35px;
     }
 
     &__title {
-      width: 474px;
       margin-bottom: 25px;
 
-      line-height: 49px;
-      font-size: 42px;
+      font-size: 41px;
     }
 
     &__subtitle {
-      margin-bottom: 25px;
+      margin-bottom: 60px;
 
-      font-size: 24px;
+      font-size: 25px;
     }
 
     &__list-title {
       margin-bottom: 8px;
 
       font-size: 19px;
-      line-height: 26px;
     }
 
     &__list {
@@ -181,27 +130,11 @@
       width: 150px;
       height: 46px;
 
-      font-size: 15px;
+      font-size: 17px;
     }
 
     &__img {
-      width: 420px;
-    }
-  }
-
-  .principle {
-    width: 169px;
-    padding: 7px;
-    &__title {
-      margin-bottom: 7px;
-
-      line-height: 19px;
-      font-size: 17px;
-    }
-    &__list {
-      li {
-        font-size: 13px;
-      }
+      width: 410px;
     }
   }
 }
@@ -209,7 +142,7 @@
 @include laptop {
   .promo {
     padding: 35px 0 45px;
-    &__inner {
+    &__wrapper {
       max-width: 738px;
     }
 
@@ -218,30 +151,25 @@
     }
 
     &__name {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
 
       font-size: 30px;
-      line-height: 23px;
     }
 
     &__title {
-      width: 365px;
       margin-bottom: 21px;
 
-      line-height: 40px;
       font-size: 32px;
     }
 
     &__subtitle {
-      margin-bottom: 27px;
+      margin-bottom: 50px;
 
       font-size: 19px;
-      line-height: 22px;
     }
 
     &__list-title {
       font-size: 17px;
-      line-height: 21px;
     }
 
     &__list {
@@ -252,10 +180,10 @@
     }
 
     &__btn {
-      width: 115px;
-      height: 39px;
+      width: 109px;
+      height: 37px;
 
-      font-size: 11px;
+      font-size: 13px;
       &:hover {
         top: 0;
         left: 0;
@@ -265,23 +193,7 @@
     }
 
     &__img {
-      width: 340px;
-    }
-  }
-
-  .principle {
-    width: 155px;
-    margin-bottom: 50px;
-    padding: 6px;
-    &__title {
-      line-height: 18px;
-      font-size: 16px;
-    }
-
-    &__list {
-      li {
-        font-size: 12px;
-      }
+      width: 315px;
     }
   }
 }
@@ -289,39 +201,32 @@
 @include tablet {
   .promo {
     padding: 25px 0 35px;
-    &__inner {
+    &__wrapper {
       max-width: 546px;
     }
 
     &__block-text {
-      width: 275px;
+      width: 263px;
     }
 
     &__name {
-      margin-bottom: 5px;
-
       font-size: 21px;
-      line-height: 21px;
     }
 
     &__title {
-      width: 251px;
       margin-bottom: 15px;
 
-      line-height: 27px;
-      font-size: 22px;
+      font-size: 23px;
     }
 
     &__subtitle {
-      margin-bottom: 20px;
+      margin-bottom: 35px;
 
       font-size: 15px;
-      line-height: 19px;
     }
 
     &__list-title {
       font-size: 12px;
-      line-height: 16px;
     }
 
     &__list {
@@ -332,14 +237,14 @@
     }
 
     &__btn {
-      width: 97px;
-      height: 31px;
+      width: 86px;
+      height: 29px;
 
-      font-size: 9px;
+      font-size: 10px;
     }
 
     &__img {
-      width: 250px;
+      width: 272px;
     }
   }
 
@@ -348,8 +253,10 @@
     margin-bottom: 40px;
     padding: 5px;
     &__title {
-      line-height: 16px;
-      font-size: 14px;
+      font-size: 13px;
+      span {
+        font-size: 21px;
+      }
     }
 
     &__list {
@@ -363,42 +270,39 @@
 @include mobile {
   .promo {
     padding: 20px 0 25px;
-    &__inner {
+    &__wrapper {
       max-width: 290px;
     }
 
     &__block-text {
       position: relative;
 
-      width: 289px;
+      width: 290px;
       margin: 0 auto;
     }
 
     &__name {
-      font-size: 22px;
-      line-height: 18px;
+      margin-bottom: 5px;
+
+      font-size: 24px;
     }
 
     &__title {
-      width: 261px;
       margin-bottom: 12px;
 
-      line-height: 27px;
-      font-size: 23px;
+      font-size: 25px;
     }
 
     &__subtitle {
-      margin-bottom: 17px;
+      margin-bottom: 20px;
 
-      font-size: 13px;
-      line-height: 15px;
+      font-size: 15px;
     }
 
     &__list-title {
       margin-bottom: 5px;
 
       font-size: 9px;
-      line-height: 11px;
     }
 
     &__list {
@@ -410,24 +314,14 @@
     }
 
     &__btn {
-      width: 69px;
-      height: 22px;
+      width: 62px;
+      height: 19px;
 
       font-size: 7px;
     }
 
     &__img {
       display: none;
-    }
-
-    &__img2 {
-      position: absolute;
-      display: block;
-      right: 13px;
-      bottom: 34px;
-
-      display: block;
-      width: 134px;
     }
   }
 
@@ -440,16 +334,18 @@
     &__title {
       margin-bottom: 5px;
 
-      line-height: 12px;
       font-size: 10px;
+      span {
+        font-size: 16px;
+        line-height: 16px;
+      }
     }
 
     &__list {
       li {
-        margin-bottom: 0;
+        margin-bottom: 1px;
 
         font-size: 8px;
-        line-height: 10px;
       }
     }
   }

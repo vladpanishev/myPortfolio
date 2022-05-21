@@ -1,0 +1,161 @@
+.cards {
+  margin-bottom: 40px;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.6em;
+    margin-left: auto;
+
+    background-color: #efefef;
+    box-shadow: 0 0 3px rgb(0 0 0 / 40%), 0 3px 6px rgb(0 0 0 / 43%);
+    &-title {
+      font-size: 19px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      color: $black-color;
+      font-family: $second-font;
+      span {
+        font-size: 27px;
+        font-family: $second-font;
+        font-weight: 700;
+        line-height: 1;
+      }
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+    li {
+      color: $black-color;
+      & &:last-child {
+        margin-bottom: 0;
+      }
+      i {
+        color: $black-color;
+      }
+    }
+    &-websites {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    &-results {
+      font-weight: 500;
+      font-size: 14px;
+      li {
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &__img {
+    display: none;
+  }
+}
+
+// @media
+@include desktop {
+  .cards {
+    margin-bottom: 35px;
+    &__results {
+      &-title {
+        font-size: 17px;
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__list {
+      &-results {
+        font-size: 13px;
+      }
+      &-websites {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .fa-angles-right {
+    display: none;
+  }
+}
+
+@include laptop {
+  .cards {
+    margin-bottom: 30px;
+    grid-template-columns: 169px 1fr 130px;
+    gap: 30px;
+    &__results {
+      padding: 6px;
+      &-title {
+        margin-bottom: 7px;
+        font-size: 13px;
+        span {
+          font-size: 19px;
+        }
+      }
+    }
+
+    &__list {
+      &-results {
+        font-size: 10px;
+      }
+      &-websites {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .fa-angles-right {
+    font-size: 25px;
+  }
+}
+
+@include tablet {
+  .cards {
+    margin-bottom: 25px;
+    &__wrapper {
+      justify-content: space-between;
+    }
+    &__results {
+      display: none;
+    }
+
+    &__list {
+      &-websites {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .fa-angles-right {
+    display: none;
+  }
+}
+
+@include mobile {
+  .cards {
+    margin-bottom: 10px;
+    &__wrapper {
+      align-items: center;
+    }
+    &__list {
+      &-websites {
+        font-size: 11px;
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 120px;
+    }
+  }
+}

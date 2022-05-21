@@ -1,6 +1,6 @@
 .footer {
   padding: 15px;
-  &__inner {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -106,7 +106,7 @@
   @include mobile {
     .footer {
       padding: 5px;
-      &__inner {
+      &__wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;

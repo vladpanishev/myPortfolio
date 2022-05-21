@@ -29,8 +29,8 @@ module.exports = {
   },
 
   favicon: {
-    src: pathSrc + '/img/favicon/favicon.svg',
-    watch: pathSrc + '/img/favicon/favicon.svg',
+    src: pathSrc + '/img/favicon/favicon.png',
+    watch: pathSrc + '/img/favicon/favicon.png',
     dest: pathDest + '/img/favicon/',
   },
 

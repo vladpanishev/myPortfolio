@@ -1,6 +1,6 @@
 .portfolio {
   padding-bottom: 90px;
-  &__inner {
+  &__wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
     overflow: hidden;
     &:hover {
       .portfolio__content {
-        bottom: 0;
+        right: 0;
 
         opacity: 1;
       }
@@ -39,12 +39,13 @@
     z-index: 1;
 
     width: 100%;
+    height: 100%;
   }
 
   &__content {
     position: absolute;
-    bottom: 100%;
-    right: 0;
+    bottom: 0;
+    right: 100%;
     z-index: 2;
 
     display: flex;
@@ -55,10 +56,11 @@
     height: 100%;
     padding: 30px;
 
-    background-color: rgba(49, 51, 53, 0.8);
+    background-color: rgba(49, 51, 53, 0.9);
+    border: 2px #f4ede2 solid;
 
     opacity: 0;
-    transition: 0.25s ease-out all;
+    transition: 0.35s ease-out all;
   }
 
   &__descr {
@@ -72,7 +74,7 @@
 @include desktop {
   .portfolio {
     padding-bottom: 70px;
-    &__inner {
+    &__wrapper {
       width: 962px;
     }
 
@@ -92,13 +94,15 @@
 
 @include laptop {
   .portfolio {
-    &__inner {
+    &__wrapper {
       width: 738px;
     }
 
     &__content {
-      bottom: 0;
+      right: 0;
 
+      background-color: rgba(49, 51, 53, 0.8);
+      border: 1px #f4ede2 solid;
       opacity: 1;
     }
   }
@@ -107,7 +111,7 @@
 @include tablet {
   .portfolio {
     padding-bottom: 60px;
-    &__inner {
+    &__wrapper {
       width: 546px;
     }
 
@@ -134,7 +138,7 @@
 @include mobile {
   .portfolio {
     padding-bottom: 30px;
-    &__inner {
+    &__wrapper {
       width: 290px;
     }
 

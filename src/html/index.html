@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Портфолио веб-разработчика, Панищева Владислава. Использую технологии HTML, CSS, JavaScript, SCSS, Gulp, Git. Делаю сайты, с которыми комфортно взаимодействовать"
+      content="Портфолио веб-разработчика Панищева Владислава. Использую технологии HTML, CSS, JavaScript, SCSS, Gulp, Git. Делаю сайты, с которыми комфортно взаимодействовать"
     />
+
     <title>Портфолио веб-разработчика</title>
+
     <script
       src="https://kit.fontawesome.com/8b1c600f44.js"
       crossorigin="anonymous"
@@ -16,7 +18,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon/favicon.svg" />
+    <link rel="icon" href="img/favicon/favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
   </head>
@@ -26,7 +28,7 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <div class="container">
-        <div class="header__inner">
+        <div class="header__wrapper">
           <a class="header__logo" href="#">PANISHEV</a>
           <nav class="nav nav__header">
             <!-- "header__logo-burger" используется только для @media (max-width: 575px) -->
@@ -80,17 +82,17 @@
               <a
                 class="social__link social__link-burger"
                 target="_blank"
-                href="https://t.me/vladpanishev"
+                href="https://codepen.io/vladpanishev"
               >
-                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-codepen"></i>
               </a>
 
               <a
                 class="social__link social__link-burger"
                 target="_blank"
-                href="https://twitter.com/vlad_panishev"
+                href="https://t.me/vladpanishev"
               >
-                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
               </a>
 
               <a
@@ -137,9 +139,9 @@
               <a
                 class="social__link social__link-header"
                 target="_blank"
-                href="https://t.me/vladpanishev"
+                href="https://codepen.io/vladpanishev"
               >
-                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-codepen"></i>
               </a>
             </li>
 
@@ -147,9 +149,9 @@
               <a
                 class="social__link social__link-header"
                 target="_blank"
-                href="https://twitter.com/vlad_panishev"
+                href="https://t.me/vladpanishev"
               >
-                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram"></i>
               </a>
             </li>
 
@@ -177,8 +179,9 @@
     <main>
       <section class="promo">
         <div class="container">
-          <ul class="promo__inner">
-            <li class="promo__block-text">
+          <div class="promo__wrapper">
+            <div class="promo__block-text">
+
               <h1 class="promo__name">Владислав Панищев</h1>
               <p class="promo__title">веб-разработчик</p>
               <p class="promo__subtitle">
@@ -186,53 +189,95 @@
                 взаимодействовать&raquo
               </p>
 
-              <dl class="principle">
-                <dt class="principle__title">основные принципы</dt>
-                <dd>
-                  <ul class="principle__list">
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>
-                      Быстродействие
-                    </li>
+              <div class="cards">
+                <div class="cards__wrapper">
+                  
+                  <div class="cards-websites">
+                      <ul class="cards__list cards__list-websites">
+                        <li>
+                          Лендинги
+                        </li>
+    
+                        <li>
+                          Мультилендинги
+                        </li>
+    
+                        <li>
+                          Интернет-магазины
+                        </li>
+    
+                        <li>
+                          Блоги
+                        </li>
+    
+                        <li>
+                          Корпоративные сайты
+                        </li>
+    
+                        <li>
+                          Сайты на Wordpress
+                        </li>
+                      </ul>
+                  </div>
+        
+                  <div class="cards__results">
+                    <h3 class="cards__results-title">
+                      <span>результат</span><br>
+                      моей работы
+                    </h3>
+                      <ul class="cards__list cards__list-results">
+                        <li>
+                          <i class="fa-solid fa-circle-check"></i>
+                          Быстродействие
+                        </li>
+    
+                        <li>
+                          <i class="fa-solid fa-circle-check"></i>
+                          Семантика
+                        </li>
+    
+                        <li>
+                          <i class="fa-solid fa-circle-check"></i>
+                          Адаптивность
+                        </li>
+    
+                        <li>
+                          <i class="fa-solid fa-circle-check"></i>
+                          Удобство
+                        </li>
+    
+                        <li>
+                          <i class="fa-solid fa-circle-check"></i>
+                          Кроссбраузерность
+                        </li>
+    
+                        <li>
+                          <i class="fa-solid fa-circle-check"></i>
+                          Динамичность
+                        </li>
+                      </ul>
+                  </div>
 
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>
-                      Семантика
-                    </li>
+                  <figure>
+                    <picture
+                      ><source srcset="img/my-photo.webp" type="image/webp" />
+                      <img
+                        class="cards__img"
+                        src="img/my-photo.png"
+                        alt="Панищев Владислав - html-верстальщик"
+                    /></picture>
+                  </figure>
+                </div>
+              </div>
 
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>
-                      Адаптивность
-                    </li>
 
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>
-                      Удобство
-                    </li>
-
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>
-                      Кроссбраузерность
-                    </li>
-                  </ul>
-                </dd>
-              </dl>
 
               <!-- "promo__img2" используется только для @media (max-width: 575px) -->
-              <figure>
-                <picture
-                  ><source srcset="img/my-photo.webp" type="image/webp" />
-                  <img
-                    class="promo__img2"
-                    src="img/my-photo.png"
-                    alt="Панищев Владислав - html-верстальщик"
-                /></picture>
-              </figure>
+              <a class="promo__btn" href="#portfolio">портфолио</a>
 
-              <button class="promo__btn">Написать мне</button>
-            </li>
-
-            <li class="promo__block-photo">
+            </div>
+          
+            <div class="promo__block-photo">
               <figure>
                 <picture
                   ><source srcset="img/my-photo.webp" type="image/webp" />
@@ -242,34 +287,29 @@
                     alt="Панищев Владислав - html-верстальщик"
                 /></picture>
               </figure>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- ABOUT -->
       <section class="about" id="about">
         <div class="container">
-          <ul class="about__inner">
+          <ul class="about__wrapper">
             <li class="about__block-text">
               <h2 class="title title__about">Обо мне</h2>
-              <p>Привет, я&nbsp;Влад <i class="fa-solid fa-hand-peace"></i></p>
               <p>
-                Занимаюсь созданием сайтов. В&nbsp;своей работе делаю упор
-                на&nbsp;&laquo;человечный веб&raquo;, то&nbsp;есть в&nbsp;первую
-                очередь стараюсь по&nbsp;максимуму угодить пользователю. Сайт,
-                который качественно сделан как изнутри, так и&nbsp;снаружи,
-                приносит посетителю удовольствие, а&nbsp;хозяину&nbsp;&mdash;
-                прибыль.
+                В&nbsp;своей работе я&nbsp;всегда соблюдаю баланс между внешней и&nbsp;внутренней красотой сайта. Стараюсь не&nbsp;отставать от&nbsp;стремительно развивающегося веба. Постоянно держу руку на&nbsp;пульсе, изучаю новые технологии, библиотеки, фишки и&nbsp;по&nbsp;возможности применяю их&nbsp;в&nbsp;своей работе.
+
+                <p> <i class="fa-solid fa-check"></i> Сайт, который качественно сделан изнутри, будет доступным и&nbsp;поможет большему количеству пользователей взаимодействовать с&nbsp;ним.</p>
+
+                <p><i class="fa-solid fa-check"></i> Сайт, который качественно
+                  сделан снаружи, будет радовать пользователя приятным внешним
+                  видом и&nbsp;удобным интерфейсом.</p>
               </p>
 
-              <p>
-                Чтобы не&nbsp;отставать от&nbsp;стремительно развивающегося
-                веба, я&nbsp;постоянно держу руку на&nbsp;пульсе, изучаю новые
-                технологии и&nbsp;по&nbsp;возможности применяю
-                их&nbsp;в&nbsp;своей работе.
-              </p>
-              <h3 class="title title__stack">Мой основной стек</h3>
+              
+              <h3 class="about__title-stack">Мой основной стек</h3>
               <div class="about__icons">
                 <svg>
                   <use xlink:href="#html"></use>
@@ -281,6 +321,10 @@
 
                 <svg>
                   <use xlink:href="#javascript"></use>
+                </svg>
+
+                <svg>
+                  <use xlink:href="#wordpress"></use>
                 </svg>
 
                 <svg>
@@ -340,8 +384,8 @@
       <section>
         <div class="result">
           <div class="container">
-            <h2 class="title title__result">5 принципов моей работы</h2>
-            <dl class="result__inner">
+            <h2 class="title title__result">6 принципов моей работы</h2>
+            <dl class="result__wrapper">
               <div class="result__block">
                 <div class="result__icon">
                   <svg>
@@ -413,6 +457,20 @@
                   аудитории.
                 </dd>
               </div>
+
+              <div class="result__block">
+                <div class="result__icon">
+                  <svg>
+                    <use xlink:href="#dynamic"></use>
+                  </svg>
+                </div>
+                <dt class="result__title">Динамичность</dt>
+                <dd class="result__subtitle">
+                  Лёгкая динамичность и&nbsp;ненавязчивая анимация оживит любую
+                  web-страницу и&nbsp;в&nbsp;тоже время не&nbsp;будет отвлекать
+                  пользователя от&nbsp;основной идеи сайта.
+                </dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -439,12 +497,12 @@
             </li>
           </ul>
 
-          <ul class="portfolio__inner">
+          <ul class="portfolio__wrapper">
             <li class="portfolio__item" tabindex="0">
               <figure>
                 <picture>
-                  <source srcset="img/work1.png" type="image/webp" />
-                  <img class="portfolio__img" src="img/work1.png" alt="" />
+                  <source srcset="img/landing-1.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/landing-1.png" alt="" />
                 </picture>
               </figure>
               <div class="portfolio__content">
@@ -456,8 +514,8 @@
             <li class="portfolio__item" tabindex="0">
               <figure>
                 <picture>
-                  <source srcset="img/work2.png" type="image/webp" />
-                  <img class="portfolio__img" src="img/work2.png" alt="" />
+                  <source srcset="img/landing-2.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/landing-2.png" alt="" />
                 </picture>
               </figure>
               <div class="portfolio__content">
@@ -469,8 +527,8 @@
             <li class="portfolio__item" tabindex="0">
               <figure>
                 <picture>
-                  <source srcset="img/work3.png" type="image/webp" />
-                  <img class="portfolio__img" src="img/work3.png" alt="" />
+                  <source srcset="img/landing-3.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/landing-3.png" alt="" />
                 </picture>
               </figure>
               <div class="portfolio__content">
@@ -482,8 +540,8 @@
             <li class="portfolio__item" tabindex="0">
               <figure>
                 <picture>
-                  <source srcset="img/work3.png" type="image/webp" />
-                  <img class="portfolio__img" src="img/work3.png" alt="" />
+                  <source srcset="img/shop.png" type="image/webp" />
+                  <img class="portfolio__img" src="img/shop.png" alt="" />
                 </picture>
               </figure>
               <div class="portfolio__content">
@@ -500,7 +558,7 @@
         <div class="container">
           <h2 class="title title__contact1">Контакты</h2>
 
-          <ul class="contact__inner">
+          <ul class="contact__wrapper">
             <li class="contact__block-form">
               <form class="form form__contact" id="write-me" action="#">
                 <h3 class="title title__contact2">Написать мне</h3>
@@ -543,9 +601,9 @@
                   <a
                     class="social__link social__link-contact"
                     target="_blank"
-                    href="https://t.me/vladpanishev"
+                    href="https://codepen.io/vladpanishev"
                   >
-                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-codepen"></i>
                   </a>
                 </li>
 
@@ -553,9 +611,9 @@
                   <a
                     class="social__link social__link-contact"
                     target="_blank"
-                    href="https://twitter.com/vlad_panishev"
+                    href="https://t.me/vladpanishev"
                   >
-                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-telegram"></i>
                   </a>
                 </li>
 
@@ -588,7 +646,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <ul class="footer__inner">
+      <ul class="footer__wrapper">
         <li class="footer__block1">
           GitHub репозиторий этого сайта
           <a href="https://github.com/vladpanishev/myPortfolio" target="_blank"

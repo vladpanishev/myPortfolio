@@ -1,7 +1,7 @@
 .contact {
   padding-bottom: 90px;
 
-  &__inner {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -34,7 +34,7 @@
 // @media
 @include desktop {
   .contact {
-    &__inner {
+    &__wrapper {
       width: 962px;
     }
 
@@ -52,7 +52,7 @@
   @include laptop {
     .contact {
       padding-bottom: 70px;
-      &__inner {
+      &__wrapper {
         width: 738px;
         padding-left: 0;
       }
@@ -73,7 +73,7 @@
 
   @include tablet {
     .contact {
-      &__inner {
+      &__wrapper {
         width: 546px;
       }
 
@@ -97,7 +97,7 @@
 
   @include mobile {
     .contact {
-      &__inner {
+      &__wrapper {
         flex-direction: column;
         align-items: center;
         width: 290px;

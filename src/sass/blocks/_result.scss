@@ -1,23 +1,20 @@
 .result {
   padding-bottom: 90px;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  &__wrapper {
+    display: grid;
+    max-width: 930px;
+    grid-template-columns: repeat(3, [col] 1fr);
+    grid-template-rows: repeat(2, [row] 1fr);
     margin: 0 auto;
+    gap: 20px;
   }
 
   &__block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 208px;
     padding: 12px;
-
     box-shadow: 0 0 5px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
-    &:first-child {
-      margin-left: 0;
-    }
   }
 
   &__icon {
@@ -56,12 +53,11 @@
 @include desktop {
   .result {
     padding-bottom: 70px;
-    &__inner {
-      width: 962px;
+    &__wrapper {
+      max-width: 750px;
     }
 
     &__block {
-      width: 168px;
       padding: 10px;
     }
 
@@ -86,20 +82,8 @@
 @include laptop {
   .result {
     padding-bottom: 70px;
-    &__inner {
-      justify-content: space-evenly;
-      width: 738px;
-    }
-
-    &__block {
-      width: 190px;
-      margin-bottom: 22px;
-      &:nth-child(4) {
-        margin-bottom: 0;
-      }
-      &:nth-child(5) {
-        margin-bottom: 0;
-      }
+    &__wrapper {
+      max-width: 700px;
     }
   }
 }
@@ -107,13 +91,9 @@
 @include tablet {
   .result {
     padding-bottom: 60px;
-    &__inner {
-      width: 546px;
-    }
-
-    &__block {
-      width: 150px;
-      padding: 8px;
+    &__wrapper {
+      max-width: 537px;
+      gap: 15px;
     }
 
     &__icon {
@@ -138,18 +118,15 @@
 @include mobile {
   .result {
     padding-bottom: 40px;
-    &__inner {
+    &__wrapper {
+      grid-template-columns: repeat(2, [col] 1fr);
+      grid-template-rows: repeat(3, [row] 1fr);
       width: 290px;
+      gap: 10px;
     }
 
     &__block {
-      width: 135px;
-      margin-bottom: 8px;
-
       box-shadow: 0 0 3px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
-      &:nth-child(4) {
-        margin-bottom: 8px;
-      }
     }
 
     &__icon {

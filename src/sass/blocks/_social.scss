@@ -13,7 +13,7 @@
   li {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 20px;
     &:first-child {
       margin-left: 0;
     }
@@ -44,11 +44,11 @@
 @include desktop {
   .social {
     li {
-      margin-left: 12px;
+      margin-left: 15px;
     }
 
     &__link {
-      font-size: 25px;
+      font-size: 27px;
     }
   }
 }
@@ -56,7 +56,7 @@
 @include laptop {
   .social {
     li {
-      margin-left: 10px;
+      margin-left: 12px;
       &:hover {
         animation: none;
       }
@@ -64,7 +64,7 @@
 
     &__link {
       &-header {
-        font-size: 19px;
+        font-size: 20px;
       }
       &-contact {
         font-size: 22px;
@@ -76,7 +76,7 @@
 @include tablet {
   .social {
     li {
-      margin-left: 8px;
+      margin-left: 10px;
     }
 
     &__contact {
@@ -85,7 +85,7 @@
 
     &__link {
       &-header {
-        font-size: 15px;
+        font-size: 17px;
       }
       &-contact {
         font-size: 18px;
@@ -110,16 +110,16 @@
 
     &__header {
       li {
-        margin-left: 5px;
+        margin-left: 10px;
       }
     }
 
     &__link {
       &-header {
-        font-size: 11px;
+        font-size: 15px;
       }
       &-burger {
-        margin-left: 12px;
+        margin-left: 15px;
 
         font-size: 18px;
         &:first-child {
