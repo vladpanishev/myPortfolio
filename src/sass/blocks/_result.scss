@@ -3,8 +3,7 @@
   &__wrapper {
     display: grid;
     max-width: 930px;
-    grid-template-columns: repeat(3, [col] 1fr);
-    grid-template-rows: repeat(2, [row] 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     gap: 20px;
   }
@@ -119,9 +118,8 @@
   .result {
     padding-bottom: 40px;
     &__wrapper {
-      grid-template-columns: repeat(2, [col] 1fr);
-      grid-template-rows: repeat(3, [row] 1fr);
-      width: 290px;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 290px;
       gap: 10px;
     }
 

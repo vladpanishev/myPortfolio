@@ -7,7 +7,7 @@
   background-color: rgba(255, 255, 255, 0);
   border: solid 1px #fff;
   &__portfolio {
-    width: 145px;
+    width: 125px;
     height: 40px;
 
     transition: 0.2s ease-out all;
@@ -34,22 +34,16 @@
 @include desktop {
   .btn {
     &__portfolio {
-      width: 136px;
-      height: 40px;
+      width: 115px;
+      height: 37px;
 
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 }
 
 @include laptop {
   .btn {
-    &__portfolio {
-      width: 126px;
-      height: 38px;
-      font-size: 13px;
-    }
-
     &__form {
       height: 45px;
 
@@ -65,8 +59,9 @@
 @include tablet {
   .btn {
     &__portfolio {
-      width: 91px;
-      height: 27px;
+      width: 80px;
+      height: 26px;
+
       font-size: 9px;
     }
 
@@ -82,9 +77,10 @@
 @include mobile {
   .btn {
     &__portfolio {
-      width: 74px;
-      height: 24px;
-      font-size: 8px;
+      width: 61px;
+      height: 21px;
+
+      font-size: 7px;
     }
 
     &__form {

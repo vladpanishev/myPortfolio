@@ -16,7 +16,6 @@
 
     font-weight: 300;
     font-size: 19px;
-    line-height: 28px;
     color: $grey-color;
 
     background-color: #323436;
@@ -91,7 +90,6 @@
       margin-right: 0;
 
       font-size: 16px;
-      line-height: 24px;
 
       box-shadow: 0 0px 3px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
       p {
@@ -136,7 +134,6 @@
       padding: 25px 15px 15px;
 
       font-size: 12px;
-      line-height: 19px;
       p {
         &:nth-child(2) {
           margin-bottom: 13px;
@@ -162,7 +159,7 @@
     }
 
     &__img {
-      width: 321px;
+      width: 313px;
     }
   }
 }
@@ -179,7 +176,6 @@
       padding: 17px 10px 10px;
 
       font-size: 9px;
-      line-height: 14px;
       p {
         &:nth-child(2) {
           margin-bottom: 10px;
@@ -206,7 +202,7 @@
     }
 
     &__img {
-      width: 234px;
+      width: 231px;
     }
 
     &__icons {
