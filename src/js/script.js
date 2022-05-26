@@ -1,3 +1,4 @@
+// BURGER
 window.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.nav__header'),
     navLink = document.querySelectorAll('.nav__link-header'),

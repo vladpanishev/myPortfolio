@@ -72,10 +72,6 @@
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: 2px solid #337eee;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;

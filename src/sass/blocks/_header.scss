@@ -1,7 +1,13 @@
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
   display: flex;
   align-items: center;
   padding: 13px 0;
+  background-color: rgba(49, 51, 53, 0.98);
+  box-shadow: 0 0 3px rgb(0 0 0 / 40%), 0 3px 6px rgb(0 0 0 / 43%);
   &__wrapper {
     display: flex;
     align-items: center;
@@ -28,6 +34,7 @@
 // @media
 @include desktop {
   .header {
+    padding: 9px 0;
     &__wrapper {
       max-width: 962px;
     }
@@ -40,7 +47,6 @@
 
 @include laptop {
   .header {
-    padding: 9px 0;
     &__wrapper {
       max-width: 738px;
     }
@@ -65,9 +71,11 @@
 
 @include mobile {
   .header {
-    position: relative;
-
     padding: 6px 0;
+    .container {
+      position: relative;
+    }
+
     &__wrapper {
       justify-content: center;
     }

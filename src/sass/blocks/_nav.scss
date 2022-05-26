@@ -18,7 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    li {
+      margin-left: 80px;
+    }
   }
 
   &__link {
@@ -79,10 +82,15 @@
   .nav {
     &__portfolio {
       margin-bottom: 25px;
+      li {
+        margin-left: 60px;
+      }
     }
 
-    li {
-      margin-left: 35px;
+    &__header {
+      li {
+        margin-left: 35px;
+      }
     }
 
     &__link {
@@ -107,7 +115,7 @@
     &__portfolio {
       margin-bottom: 20px;
       li {
-        margin-left: 25px;
+        margin-left: 50px;
       }
     }
 
@@ -164,7 +172,10 @@
     }
 
     &__portfolio {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      li {
+        margin-left: 35px;
+      }
     }
 
     &__link {

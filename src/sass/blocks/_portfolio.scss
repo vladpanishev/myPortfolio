@@ -24,7 +24,6 @@
 
   &__img {
     position: absolute;
-    z-index: 1;
 
     width: 100%;
     height: 100%;
@@ -33,8 +32,7 @@
   &__content {
     position: absolute;
     bottom: 0;
-    right: 0;
-    z-index: 2;
+    right: 100%;
 
     display: flex;
     flex-direction: column;
@@ -48,13 +46,17 @@
     border: 2px #f4ede2 solid;
 
     opacity: 1;
-    transition: 0.35s ease-out all;
+    transition: 0.3s all;
   }
 
   &__descr {
     color: #fff;
-    font-family: $second-font;
     font-size: 18px;
+    text-align: center;
+    span {
+      font-size: 22px;
+      font-weight: 700;
+    }
   }
 }
 
@@ -98,9 +100,11 @@
 
     &__item {
       height: 161px;
-
-      &__descr {
-        font-size: 13px;
+    }
+    &__descr {
+      font-size: 13px;
+      span {
+        font-size: 17px;
       }
     }
   }

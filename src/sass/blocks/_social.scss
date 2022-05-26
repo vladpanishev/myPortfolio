@@ -43,12 +43,16 @@
 // @media
 @include desktop {
   .social {
-    li {
-      margin-left: 15px;
+    &__header {
+      li {
+        margin-left: 15px;
+      }
     }
 
     &__link {
-      font-size: 27px;
+      &-header {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -56,7 +60,7 @@
 @include laptop {
   .social {
     li {
-      margin-left: 12px;
+      margin-left: 15px;
       &:hover {
         animation: none;
       }
@@ -76,7 +80,7 @@
 @include tablet {
   .social {
     li {
-      margin-left: 10px;
+      margin-left: 12px;
     }
 
     &__contact {
@@ -99,7 +103,7 @@
     &__contact {
       position: absolute;
       bottom: -293px;
-      right: 78px;
+      right: 91px;
 
       margin-bottom: 0;
     }
@@ -116,12 +120,12 @@
 
     &__link {
       &-header {
-        font-size: 15px;
+        font-size: 18px;
       }
       &-burger {
         margin-left: 15px;
 
-        font-size: 18px;
+        font-size: 23px;
         &:first-child {
           margin-left: 0;
         }

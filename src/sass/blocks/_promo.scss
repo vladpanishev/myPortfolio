@@ -1,5 +1,5 @@
 .promo {
-  padding: 55px 0 65px;
+  padding: 120px 0 65px;
 
   background-color: #fff;
   &__wrapper {
@@ -88,7 +88,7 @@
 // @media
 @include desktop {
   .promo {
-    padding: 45px 0 55px;
+    padding: 100px 0 55px;
     &__wrapper {
       max-width: 962px;
     }
@@ -141,7 +141,7 @@
 
 @include laptop {
   .promo {
-    padding: 35px 0 45px;
+    padding: 75px 0 40px;
     &__wrapper {
       max-width: 738px;
     }
@@ -200,7 +200,7 @@
 
 @include tablet {
   .promo {
-    padding: 25px 0 35px;
+    padding: 65px 0 30px;
     &__wrapper {
       max-width: 546px;
     }
@@ -269,7 +269,7 @@
 
 @include mobile {
   .promo {
-    padding: 20px 0 25px;
+    padding: 60px 0 20px;
     &__wrapper {
       max-width: 290px;
     }

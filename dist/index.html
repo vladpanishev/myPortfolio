@@ -382,7 +382,7 @@
             <a class="header__logo header__logo-burger" href="#header"
               >PANISHEV</a
             >
-            <ul>
+            <ul >
               <li>
                 <a class="nav__link nav__link-header" href="#header">
                   <i class="fa-solid fa-house-chimney-window"></i> Главная</a
@@ -394,6 +394,7 @@
                   <i class="fa-solid fa-address-card"></i> Обо мне</a
                 >
               </li>
+
 
               <li>
                 <a class="nav__link nav__link-header" href="#portfolio">
@@ -411,35 +412,11 @@
             <!-- "social__burger" используется только для @media (max-width: 575px) -->
             <div class="social social__burger">
               <a
-                class="social__link social__link-burger"
-                target="_blank"
-                href="https://github.com/vladpanishev"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-
-              <a
-                class="social__link social__link-burger"
-                target="_blank"
-                href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-
-              <a
-                class="social__link social__link-burger"
-                target="_blank"
-                href="https://codepen.io/vladpanishev"
-              >
-                <i class="fa-brands fa-codepen"></i>
-              </a>
-
-              <a
-                class="social__link social__link-burger"
-                target="_blank"
-                href="https://t.me/vladpanishev"
-              >
-                <i class="fa-brands fa-telegram"></i>
+              class="social__link social__link-burger"
+              target="_blank"
+              href="https://t.me/vladpanishev">
+                                              
+              <i class="fa-brands fa-telegram"></i>
               </a>
 
               <a
@@ -449,6 +426,24 @@
               >
                 <i class="fa-brands fa-instagram"></i>
               </a>
+
+              <a
+                class="social__link social__link-burger"
+                target="_blank"
+                href="https://github.com/vladpanishev"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+              class="social__link social__link-burger"
+              target="_blank"
+              href="https://codepen.io/vladpanishev"
+              >
+            
+              <i class="fa-brands fa-codepen"></i>
+              </a>  
+              
             </div>
 
             <!-- "nav-text" используется только для @media (max-width: 575px) -->
@@ -462,35 +457,6 @@
           </nav>
 
           <ul class="social social__header">
-            <li>
-              <a
-                class="social__link social__link-header"
-                target="_blank"
-                href="https://github.com/vladpanishev"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="social__link social__link-header"
-                target="_blank"
-                href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="social__link social__link-header"
-                target="_blank"
-                href="https://codepen.io/vladpanishev"
-              >
-                <i class="fa-brands fa-codepen"></i>
-              </a>
-            </li>
 
             <li>
               <a
@@ -511,6 +477,27 @@
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
+
+            <li>
+              <a
+                class="social__link social__link-header"
+                target="_blank"
+                href="https://github.com/vladpanishev"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="social__link social__link-header"
+                target="_blank"
+                href="https://codepen.io/vladpanishev"
+              >
+              <i class="fa-brands fa-codepen"></i>
+              </a>
+            </li>
+          
           </ul>
         </div>
       </div>
@@ -605,7 +592,7 @@
                       </ul>
                   </div>
 
-                  <figure>
+                <!-- "cards__img" используется только для @media (max-width: 575px) -->
                     <picture
                       ><source srcset="img/my-photo.webp" type="image/webp" />
                       <img
@@ -613,19 +600,15 @@
                         src="img/my-photo.png"
                         alt="Панищев Владислав - html-верстальщик"
                     /></picture>
-                  </figure>
                 </div>
               </div>
-
-
-
-              <!-- "promo__img2" используется только для @media (max-width: 575px) -->
+              
               <a class="promo__btn" href="#portfolio">портфолио</a>
 
             </div>
           
+            
             <div class="promo__block-photo">
-              <figure>
                 <picture
                   ><source srcset="img/my-photo.webp" type="image/webp" />
                   <img
@@ -633,7 +616,6 @@
                     src="img/my-photo.png"
                     alt="Панищев Владислав - html-верстальщик"
                 /></picture>
-              </figure>
             </div>
           </div>
         </div>
@@ -701,7 +683,7 @@
             </li>
 
             <li class="about__block-photo">
-              <figure>
+            
                 <picture
                   ><source srcset="img/my-family.webp" type="image/webp" />
                   <img
@@ -709,10 +691,10 @@
                     src="img/my-family.png"
                     alt="Семейные фотографии Панищева Владислава"
                 /></picture>
-              </figure>
+              
 
               <!-- "about__img2" используется только для @media (max-width: 575px) -->
-              <figure>
+            
                 <picture>
                   <source srcset="img/my-family2.png" type="image/webp" />
                   <img
@@ -721,7 +703,7 @@
                     alt="Семейные фотографии Панищева Владислава"
                   />
                 </picture>
-              </figure>
+              
             </li>
           </ul>
         </div>
@@ -827,7 +809,7 @@
       <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="title title__portfolio">Портфолио</h2>
-          <ul class="nav nav__portfolio">
+          <!-- <ul class="nav nav__portfolio">
             <li class="nav__list nav__list-portfolio">
               <a class="nav__link nav__link-portfolio" href="#">Последние работы</a>
             </li>
@@ -840,58 +822,45 @@
               >
             </li>
           
-          </ul>
+          </ul> -->
 
           <ul class="portfolio__wrapper">
-            <li class="portfolio__item" tabindex="0">
-              <figure>
+            <li class="portfolio__item">
+              
                 <picture>
                   <source srcset="img/landing-1.png" type="image/webp" />
                   <img class="portfolio__img" src="img/landing-1.png" alt="" />
                 </picture>
-              </figure>
+            
               <div class="portfolio__content">
-                <p class="portfolio__descr">Описание работы</p>
-                <button class="btn btn__portfolio">Подробнее</button>
+                <p class="portfolio__descr">Лендинг<br><span>NIMBLE TOKEN</span></p>
+                <a class="btn btn__portfolio" href="#popup1">Подробнее</a>
               </div>
             </li>
 
-            <li class="portfolio__item" tabindex="0">
-              <figure>
+            <li class="portfolio__item">
+  
                 <picture>
                   <source srcset="img/landing-2.png" type="image/webp" />
                   <img class="portfolio__img" src="img/landing-2.png" alt="" />
                 </picture>
-              </figure>
+              
               <div class="portfolio__content">
-                <p class="portfolio__descr">Описание работы</p>
-                <button class="btn btn__portfolio">Подробнее</button>
+                <p class="portfolio__descr">Лендинг<br><span>VOLTSTREAM</span></p>
+                <a class="btn btn__portfolio" href="#popup2">Подробнее</a>
               </div>
             </li>
 
-            <li class="portfolio__item" tabindex="0">
-              <figure>
-                <picture>
-                  <source srcset="img/landing-3.png" type="image/webp" />
-                  <img class="portfolio__img" src="img/landing-3.png" alt="" />
-                </picture>
-              </figure>
-              <div class="portfolio__content">
-                <p class="portfolio__descr">Описание работы</p>
-                <button class="btn btn__portfolio">Подробнее</button>
-              </div>
-            </li>
-
-            <li class="portfolio__item" tabindex="0">
-              <figure>
+            <li class="portfolio__item">
+            
                 <picture>
                   <source srcset="img/shop.png" type="image/webp" />
                   <img class="portfolio__img" src="img/shop.png" alt="" />
                 </picture>
-              </figure>
+            
               <div class="portfolio__content">
-                <p class="portfolio__descr">Описание работы</p>
-                <button class="btn btn__portfolio">Подробнее</button>
+                <p class="portfolio__descr">Интернет-магазин<br><span>LOFT МЕБЕЛЬ</span></p>
+                <a class="btn btn__portfolio" href="#popup3">Подробнее</a>
               </div>
             </li>
           </ul>
@@ -936,26 +905,6 @@
                   <a
                     class="social__link social__link-contact"
                     target="_blank"
-                    href="https://www.linkedin.com/in/vladislav-panishev-a00427230/"
-                  >
-                    <i class="fa-brands fa-linkedin"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="social__link social__link-contact"
-                    target="_blank"
-                    href="https://codepen.io/vladpanishev"
-                  >
-                    <i class="fa-brands fa-codepen"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="social__link social__link-contact"
-                    target="_blank"
                     href="https://t.me/vladpanishev"
                   >
                     <i class="fa-brands fa-telegram"></i>
@@ -971,9 +920,19 @@
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
-              </ul>
 
-              <figure>
+                <li>  
+                  <a
+                  class="social__link social__link-contact"
+                  target="_blank"
+                  href="https://codepen.io/vladpanishev"
+                  >
+                
+                  <i class="fa-brands fa-codepen"></i>
+                  </a> 
+                </li>
+              </ul>
+          
                 <picture>
                   <source srcset="img/message.png" type="image/webp" />
                   <img
@@ -982,7 +941,7 @@
                     alt="Ваше сообщение для Панищева Владислава"
                   />
                 </picture>
-              </figure>
+              
             </li>
           </ul>
         </div>
@@ -1011,6 +970,133 @@
         </li>
       </ul>
     </footer>
+
+    <!-- popup1 -->
+    <div class="popup" id="popup1">
+      <a class="popup__area" href="##"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+        <a class="popup__close" href="##">
+          <i class="fa-solid fa-xmark"></i> 
+        </a>
+          <div class="popup__text">
+            <div class="popup__section1">
+              <h2 class="popup__title">NIMBLE TOKEN</h2>
+              <p class="popup__descr">Сайт посвящён продвинутой системе азартных игр<br> в&nbsp;основе которой лежит технология блокчейна</p>
+            </div>
+
+            <div class="popup__section2">
+                <h3 class="popup__stack">Технологии</h3>
+                <div class="popup__descr">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-sass"></i>
+                  <i class="fa-brands fa-gulp"></i>
+                  <i class="fa-brands fa-npm"></i>
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+            </div>
+            </div>
+          <div class="popup__img">
+            <picture>
+            <source srcset="img/popup-desck1.png" type="image/webp"/>
+            <img class="popup__img-desck" src="img/popup-desck1.png" alt="">
+            </picture>
+            <picture>
+            <source srcset="img/popup-mobile1.png" type="image/webp"/>
+            <img class="popup__img-mobile" src="img/popup-mobile1.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+<!-- popup2 -->
+    <div class="popup" id="popup2">
+      <a class="popup__area" href="##"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+        <a class="popup__close" href="##">
+          <i class="fa-solid fa-xmark"></i> 
+        </a>
+          <div class="popup__text">
+            <div class="popup__section1">
+              <h2 class="popup__title">VOLTSTREAM</h2>
+              <p class="popup__descr">Сайт компании по&nbsp;установки заземления<br> любой сложности</p>
+            </div>
+
+            <div class="popup__section2">
+                <h3 class="popup__stack">Технологии</h3>
+                <div class="popup__descr">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-sass"></i>
+                  <i class="fa-brands fa-gulp"></i>
+                  <i class="fa-brands fa-npm"></i>
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+            </div>
+            </div>
+          <div class="popup__img popup__img-2">
+            <picture>
+            <source srcset="img/popup-desck2.png" type="image/webp"/>
+            <img class="popup__img-desck" src="img/popup-desck2.png" alt="">
+            </picture>
+            
+            <picture>
+            <source srcset="img/popup-mobile2.png" type="image/webp"/>
+            <img class="popup__img-mobile" src="img/popup-mobile2.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!-- popup3 -->
+    <div class="popup" id="popup3">
+      <a class="popup__area" href="##"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+        <a class="popup__close" href="##">
+          <i class="fa-solid fa-xmark"></i> 
+        </a>
+          <div class="popup__text">
+            <div class="popup__section1">
+              <h2 class="popup__title">LOFT МЕБЕЛЬ</h2>
+              <p class="popup__descr">Интернет-магазин домашней мебели</p>
+            </div>
+
+            <div class="popup__section2">
+                <h3 class="popup__stack">Технологии</h3>
+                <div class="popup__descr">
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-wordpress"></i>
+                  <i class="fa-brands fa-sass"></i>
+                  <i class="fa-brands fa-gulp"></i>
+                  <i class="fa-brands fa-npm"></i>
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+            </div>
+            </div>
+
+          <div class="popup__img">
+            <picture>
+            <source srcset="img/popup-desck3.png" type="image/webp"/>
+            <img class="popup__img-desck" src="img/popup-desck3.png" alt="">
+            </picture>
+
+            <picture>
+            <source srcset="img/popup-mobile3.png" type="image/webp"/>
+            <img class="popup__img-mobile" src="img/popup-mobile3.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div> 
+    </div>
 
     <!-- JavaScript -->
     <script src="js/script.min.js"></script>
