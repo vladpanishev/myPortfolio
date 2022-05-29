@@ -38,26 +38,25 @@
   .btn {
     &__portfolio {
       font-size: 13px;
-    }
-  }
-}
-
-@include laptop {
-  .btn {
-    &__portfolio {
       &:hover {
         color: #fff;
         background-color: rgba(255, 255, 255, 0);
       }
     }
     &__form {
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .btn {
+    &__form {
       height: 45px;
 
       font-size: 17px;
-    }
-
-    &:hover {
-      box-shadow: none;
     }
   }
 }
@@ -80,7 +79,7 @@
 @include mobile {
   .btn {
     &__portfolio {
-      font-size: 8px;
+      font-size: 12px;
     }
 
     &__form {

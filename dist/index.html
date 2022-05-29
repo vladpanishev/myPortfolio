@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
   </head>
-  <body>
+  <body id="body">
     <!DOCTYPE html>
 <svg
   display="none"
@@ -373,18 +373,17 @@
 
 
     <!-- HEADER -->
-    <header class="header" id="header">
+    <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo" href="#">PANISHEV</a>
           <nav class="nav nav__header">
             <!-- "header__logo-burger" используется только для @media (max-width: 575px) -->
-            <a class="header__logo header__logo-burger" href="#header"
-              >PANISHEV</a
+            <a class="header__logo header__logo-burger" >PANISHEV</a
             >
             <ul >
               <li>
-                <a class="nav__link nav__link-header" href="#header">
+                <a class="nav__link nav__link-header" href="#body">
                   <i class="fa-solid fa-house-chimney-window"></i> Главная</a
                 >
               </li>
@@ -433,23 +432,14 @@
                 href="https://github.com/vladpanishev"
               >
                 <i class="fa-brands fa-github"></i>
-              </a>
-
-              <a
-              class="social__link social__link-burger"
-              target="_blank"
-              href="https://codepen.io/vladpanishev"
-              >
-            
-              <i class="fa-brands fa-codepen"></i>
-              </a>  
+              </a> 
               
             </div>
 
             <!-- "nav-text" используется только для @media (max-width: 575px) -->
             <div class="nav-text">
               <p>
-                "Болтовня ничего не стоит. Покажите мне код."<br /><br />
+                "Болтовня ничего не стоит.<br>Покажите мне код."<br /><br />
 
                 <span>— Linus Torvalds (Создатель ядра Linux)</span>
               </p>
@@ -485,16 +475,6 @@
                 href="https://github.com/vladpanishev"
               >
                 <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="social__link social__link-header"
-                target="_blank"
-                href="https://codepen.io/vladpanishev"
-              >
-              <i class="fa-brands fa-codepen"></i>
               </a>
             </li>
           
@@ -873,33 +853,33 @@
           <h2 class="title title__contact1">Контакты</h2>
 
           <ul class="contact__wrapper">
-            <li class="contact__block-form">
-              <form class="form form__contact" id="write-me" action="#">
+
+            <picture>
+              <source srcset="img/message.png" type="image/webp" />
+              <img
+                class="contact__img"
+                src="img/message.png"
+                alt="Ваше сообщение для Панищева Владислава"
+              />
+            </picture>
+
+            <!-- <li class="contact__block-form">
+              <form class="form form__contact" action="#" method="POST" enctype="multipart/form-data">
                 <h3 class="title title__contact2">Написать мне</h3>
-                <input required placeholder="Ваше имя" type="text" />
-                <input required placeholder="Ваш e-mail" type="email" />
+                <input placeholder="Ваше имя" name="Имя" data-validate-field="name" type="text" />
+                <input placeholder="Ваш e-mail" name="mail" data-validate-field="email" type="email" />
                 <textarea placeholder="Ваше сообщение" name="text"></textarea>
 
                 <button class="btn btn__form">Отправить</button>
               </form>
-            </li>
+            </li> -->
 
             <li class="contact__block-message">
               <p class="contact__descr">
-                Если у&nbsp;вас возникли вопросы, вы&nbsp;можете написать мне,
-                и&nbsp;я&nbsp;отвечу вам в&nbsp;самое ближайшее время.
+                Возникли вопросы?<br> Не&nbsp;стесняйтесь, пишите.
               </p>
 
               <ul class="social social__contact">
-                <li>
-                  <a
-                    class="social__link social__link-contact"
-                    target="_blank"
-                    href="https://github.com/vladpanishev"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </li>
 
                 <li>
                   <a
@@ -921,27 +901,16 @@
                   </a>
                 </li>
 
-                <li>  
+                <li>
                   <a
-                  class="social__link social__link-contact"
-                  target="_blank"
-                  href="https://codepen.io/vladpanishev"
+                    class="social__link social__link-contact"
+                    target="_blank"
+                    href="https://github.com/vladpanishev"
                   >
-                
-                  <i class="fa-brands fa-codepen"></i>
-                  </a> 
+                    <i class="fa-brands fa-github"></i>
+                  </a>
                 </li>
               </ul>
-          
-                <picture>
-                  <source srcset="img/message.png" type="image/webp" />
-                  <img
-                    class="contact__img"
-                    src="img/message.png"
-                    alt="Ваше сообщение для Панищева Владислава"
-                  />
-                </picture>
-              
             </li>
           </ul>
         </div>
@@ -1013,9 +982,9 @@
     </div>
 
 <!-- popup2 -->
-    <div class="popup" id="popup2">
+    <div class="popup" id="popup2">  
       <a class="popup__area" href="##"></a>
-      <div class="popup__body">
+      <div class="popup__body"> 
         <div class="popup__content">
         <a class="popup__close" href="##">
           <i class="fa-solid fa-xmark"></i> 

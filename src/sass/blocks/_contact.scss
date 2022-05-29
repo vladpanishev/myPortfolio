@@ -3,8 +3,7 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-evenly;
     padding-left: 25px;
     margin: 0 auto;
   }
@@ -12,22 +11,21 @@
   &__block-message {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    width: 680px;
+    justify-content: center;
   }
 
   &__descr {
     margin-bottom: 25px;
 
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     color: $grey-color;
     font-family: $second-font;
   }
 
   &__img {
-    width: 340px;
+    width: 370px;
   }
 }
 
@@ -38,14 +36,14 @@
       width: 962px;
     }
 
-    &__block-message {
-      width: 500px;
+    &__descr {
+      margin-bottom: 22px;
+
+      font-size: 25px;
     }
 
-    &__descr {
-      margin-bottom: 30px;
-
-      font-size: 21px;
+    &__img {
+      width: 330px;
     }
   }
 
@@ -57,40 +55,33 @@
         padding-left: 0;
       }
 
-      &__block-message {
-        width: 350px;
-      }
-
       &__descr {
-        font-size: 16px;
+        margin-bottom: 16px;
+
+        font-size: 21px;
       }
 
       &__img {
-        width: 317px;
+        width: 300px;
       }
     }
   }
 
   @include tablet {
     .contact {
+      padding-bottom: 0;
       &__wrapper {
         width: 546px;
       }
 
-      &__block-message {
-        width: 263px;
-      }
-
       &__descr {
-        margin-bottom: 20px;
+        margin-bottom: 13px;
 
-        font-size: 12px;
+        font-size: 16px;
       }
 
       &__img {
-        width: 218px;
-
-        transform: translateY(13px);
+        width: 230px;
       }
     }
   }
@@ -103,20 +94,20 @@
         width: 290px;
       }
 
-      &__block-form {
-        order: 2;
-      }
+      // &__block-form {
+      //   order: 2;
+      // }
 
-      &__block-message {
-        position: relative;
-        order: 1;
+      // &__block-message {
+      //   position: relative;
+      //   order: 1;
 
-        width: 280px;
-        margin-left: 0;
-      }
+      //   width: 280px;
+      //   margin-left: 0;
+      // }
 
       &__descr {
-        margin-bottom: 30px;
+        font-size: 20px;
       }
 
       &__img {

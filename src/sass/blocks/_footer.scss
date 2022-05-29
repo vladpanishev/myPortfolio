@@ -15,7 +15,7 @@
       margin-left: 5px;
 
       color: rgb(244, 237, 226, 0.27);
-      font-size: 16px;
+      font-size: 20px;
 
       transition: 0.2s all;
       &:hover {
@@ -50,7 +50,10 @@
         i {
           margin-left: 4px;
 
-          font-size: 14px;
+          font-size: 18px;
+          &:hover {
+            color: rgb(244, 237, 226, 0.27);
+          }
         }
       }
 
@@ -69,10 +72,7 @@
       &__block1 {
         font-size: 9px;
         i {
-          font-size: 9px;
-          &:hover {
-            color: rgb(244, 237, 226, 0.27);
-          }
+          font-size: 15px;
         }
       }
 
@@ -91,6 +91,9 @@
       padding: 10px;
       &__block1 {
         font-size: 7px;
+        i {
+          font-size: 11px;
+        }
       }
 
       &__block2 {
@@ -115,11 +118,14 @@
       &__block1 {
         margin-bottom: 10px;
 
-        font-size: 7px;
+        font-size: 12px;
+        i {
+          font-size: 17px;
+        }
       }
 
       &__block2 {
-        font-size: 7px;
+        font-size: 9px;
       }
 
       &__block3 {

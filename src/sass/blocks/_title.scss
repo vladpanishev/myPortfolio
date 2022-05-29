@@ -41,7 +41,7 @@
   &__contact1 {
     width: 259px;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     font-weight: 900;
     line-height: 45px;
@@ -91,6 +91,7 @@
 
     &__contact1 {
       width: 206px;
+      margin-bottom: 40px;
 
       line-height: 36px;
       font-size: 35px;
@@ -126,7 +127,7 @@
 
     &__contact1 {
       width: 175px;
-      margin-bottom: 70px;
+      margin-bottom: 40px;
 
       line-height: 32px;
       font-size: 30px;
@@ -169,7 +170,7 @@
     }
     &__contact1 {
       width: 142px;
-      margin-bottom: 60px;
+      margin-bottom: 25px;
 
       line-height: 27px;
       font-size: 24px;
@@ -189,35 +190,35 @@
 @include mobile {
   .title {
     &__about {
-      top: -11px;
+      top: -15px;
 
-      width: 70px;
+      width: 99px;
 
-      line-height: 16px;
-      font-size: 14px;
+      line-height: 20px;
+      font-size: 20px;
     }
 
     &__result {
-      width: 171px;
-      margin-bottom: 13px;
+      width: 230px;
 
-      font-size: 10px;
+      margin-bottom: 15px;
+      font-size: 15px;
     }
 
     &__portfolio {
-      width: 143px;
-      margin-bottom: 10px;
+      width: 208px;
+      margin-bottom: 15px;
 
-      line-height: 23px;
-      font-size: 20px;
+      line-height: 34px;
+      font-size: 30px;
     }
 
     &__contact1 {
-      width: 119px;
-      margin-bottom: 30px;
+      width: 181px;
+      margin-bottom: 20px;
 
-      line-height: 23px;
-      font-size: 20px;
+      line-height: 35px;
+      font-size: 31px;
     }
 
     &__contact2 {
