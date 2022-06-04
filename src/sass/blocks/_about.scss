@@ -16,7 +16,7 @@
 
     font-weight: 300;
     font-size: 19px;
-    color: $grey-color;
+    color: #fff;
 
     background-color: #323436;
     box-shadow: 0 0px 7px rgb(0 0 0 / 36%), 0 3px 10px rgb(0 0 0 / 22%);
@@ -54,7 +54,7 @@
     height: 40px;
     margin-left: 25px;
 
-    fill: $grey-color;
+    fill: #fff;
     &:nth-child(1) {
       transform: scale(0.9);
     }

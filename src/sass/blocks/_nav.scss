@@ -152,7 +152,7 @@
         margin: 26px 0 30px;
       }
       li {
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         margin-left: 0;
         &:last-child {
           margin-bottom: 0;
@@ -166,6 +166,11 @@
 
           font-size: 25px;
         }
+      }
+
+      .fa-address-card {
+        margin-right: 8px;
+        font-size: 23px;
       }
     }
 
