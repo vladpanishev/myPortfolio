@@ -9,13 +9,18 @@
       content="Портфолио веб-разработчика Панищева Владислава. Использую технологии HTML, CSS, JavaScript, SCSS, Gulp, Git. Делаю сайты, с которыми комфортно взаимодействовать"
     />
 
+    <!-- Теги с директивами "не кешировать" для браузера и "узлов" веб-сети -->
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
     <title>Портфолио веб-разработчика</title>
 
     <script
       src="https://kit.fontawesome.com/8b1c600f44.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css?1" />
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon/favicon.png" />
@@ -808,7 +813,7 @@
             
               <div class="portfolio__content">
                 <p class="portfolio__descr">Лендинг<br><span>NIMBLE TOKEN</span></p>
-                <a class="btn btn__portfolio" href="#popup1">Подробнее</a>
+                <button data-path="one" class="btn btn__portfolio">Подробнее</button>
               </div>
             </li>
 
@@ -821,7 +826,7 @@
               
               <div class="portfolio__content">
                 <p class="portfolio__descr">Лендинг<br><span>VOLTSTREAM</span></p>
-                <a class="btn btn__portfolio" href="#popup2">Подробнее</a>
+                <button data-path="two" class="btn btn__portfolio">Подробнее</button>
               </div>
             </li>
 
@@ -834,7 +839,7 @@
             
               <div class="portfolio__content">
                 <p class="portfolio__descr">Интернет-магазин<br><span>LOFT МЕБЕЛЬ</span></p>
-                <a class="btn btn__portfolio" href="#popup3">Подробнее</a>
+                <button data-path="three" class="btn btn__portfolio">Подробнее</button>
               </div>
             </li>
           </ul>
@@ -934,134 +939,113 @@
       </ul>
     </footer>
 
-    <!-- popup1 -->
-    <div class="popup" id="popup1">
-      <a class="popup__area" href="##"></a>
-      <div class="popup__body">
-        <div class="popup__content">
-        <a class="popup__close" href="##">
-          <i class="fa-solid fa-xmark"></i> 
-        </a>
-          <div class="popup__text">
-            <div class="popup__section1">
-              <h2 class="popup__title">NIMBLE TOKEN</h2>
-              <p class="popup__descr">Сайт посвящён продвинутой системе азартных игр<br> в&nbsp;основе которой лежит технология блокчейна</p>
-            </div>
-
-            <div class="popup__section2">
-                <h3 class="popup__stack">Технологии</h3>
-                <div class="popup__descr">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-gulp"></i>
-                  <i class="fa-brands fa-npm"></i>
-                  <i class="fa-brands fa-figma"></i>
-                </div>
-            </div>
-            </div>
-          <div class="popup__img">
-            <picture>
-            <source srcset="img/popup-desck1.png" type="image/webp"/>
-            <img class="popup__img-desck" src="img/popup-desck1.png" alt="">
-            </picture>
-            <picture>
-            <source srcset="img/popup-mobile1.png" type="image/webp"/>
-            <img class="popup__img-mobile" src="img/popup-mobile1.png" alt="">
-            </picture>
-          </div>
+    <!DOCTYPE html>
+<div class="modal-overlay">
+  <div class="modal modal--1" data-target="one">
+    <div class="modal__text">
+      <div class="modal__section1">
+        <h2 class="modal__title">NIMBLE TOKEN</h2>
+        <p class="modal__descr">
+          Сайт посвящён продвинутой системе азартных игр<br />
+          в&nbsp;основе которой лежит технология блокчейна
+        </p>
+      </div>
+      <div class="modal__section2">
+        <h3 class="modal__stack">Технологии</h3>
+        <div class="modal__descr">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-sass"></i>
+          <i class="fa-brands fa-gulp"></i>
+          <i class="fa-brands fa-npm"></i>
+          <i class="fa-brands fa-figma"></i>
         </div>
-      </div> 
+      </div>
     </div>
+    <div class="modal__img">
+      <picture>
+        <source srcset="img/popup-desck1.png" type="image/webp" />
+        <img class="modal__img-desck" src="img/popup-desck1.png" alt="" />
+      </picture>
+      <picture>
+        <source srcset="img/popup-mobile1.png" type="image/webp" />
+        <img class="modal__img-mobile" src="img/popup-mobile1.png" alt="" />
+      </picture>
+    </div>
+  </div>
 
-<!-- popup2 -->
-    <div class="popup" id="popup2">  
-      <a class="popup__area" href="##"></a>
-      <div class="popup__body"> 
-        <div class="popup__content">
-        <a class="popup__close" href="##">
-          <i class="fa-solid fa-xmark"></i> 
-        </a>
-          <div class="popup__text">
-            <div class="popup__section1">
-              <h2 class="popup__title">VOLTSTREAM</h2>
-              <p class="popup__descr">Сайт компании по&nbsp;установки заземления<br> любой сложности</p>
-            </div>
-
-            <div class="popup__section2">
-                <h3 class="popup__stack">Технологии</h3>
-                <div class="popup__descr">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-gulp"></i>
-                  <i class="fa-brands fa-npm"></i>
-                  <i class="fa-brands fa-figma"></i>
-                </div>
-            </div>
-            </div>
-          <div class="popup__img popup__img-2">
-            <picture>
-            <source srcset="img/popup-desck2.png" type="image/webp"/>
-            <img class="popup__img-desck" src="img/popup-desck2.png" alt="">
-            </picture>
-            
-            <picture>
-            <source srcset="img/popup-mobile2.png" type="image/webp"/>
-            <img class="popup__img-mobile" src="img/popup-mobile2.png" alt="">
-            </picture>
-          </div>
+  <div class="modal modal--2" data-target="two">
+    <div class="modal__text">
+      <div class="modal__section1">
+        <h2 class="modal__title">VOLTSTREAM</h2>
+        <p class="modal__descr">
+          Сайт компании по&nbsp;установки заземления<br />
+          любой сложности
+        </p>
+      </div>
+      <div class="modal__section2">
+        <h3 class="modal__stack">Технологии</h3>
+        <div class="modal__descr">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-sass"></i>
+          <i class="fa-brands fa-gulp"></i>
+          <i class="fa-brands fa-npm"></i>
+          <i class="fa-brands fa-figma"></i>
         </div>
-      </div> 
+      </div>
     </div>
+    <div class="modal__img modal__img-2">
+      <picture>
+        <source srcset="img/popup-desck2.png" type="image/webp" />
+        <img class="modal__img-desck" src="img/popup-desck2.png" alt="" />
+      </picture>
 
-    <!-- popup3 -->
-    <div class="popup" id="popup3">
-      <a class="popup__area" href="##"></a>
-      <div class="popup__body">
-        <div class="popup__content">
-        <a class="popup__close" href="##">
-          <i class="fa-solid fa-xmark"></i> 
-        </a>
-          <div class="popup__text">
-            <div class="popup__section1">
-              <h2 class="popup__title">LOFT МЕБЕЛЬ</h2>
-              <p class="popup__descr">Интернет-магазин домашней мебели</p>
-            </div>
+      <picture>
+        <source srcset="img/popup-mobile2.png" type="image/webp" />
+        <img class="modal__img-mobile" src="img/popup-mobile2.png" alt="" />
+      </picture>
+    </div>
+  </div>
 
-            <div class="popup__section2">
-                <h3 class="popup__stack">Технологии</h3>
-                <div class="popup__descr">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                  <i class="fa-brands fa-wordpress"></i>
-                  <i class="fa-brands fa-sass"></i>
-                  <i class="fa-brands fa-gulp"></i>
-                  <i class="fa-brands fa-npm"></i>
-                  <i class="fa-brands fa-figma"></i>
-                </div>
-            </div>
-            </div>
-
-          <div class="popup__img">
-            <picture>
-            <source srcset="img/popup-desck3.png" type="image/webp"/>
-            <img class="popup__img-desck" src="img/popup-desck3.png" alt="">
-            </picture>
-
-            <picture>
-            <source srcset="img/popup-mobile3.png" type="image/webp"/>
-            <img class="popup__img-mobile" src="img/popup-mobile3.png" alt="">
-            </picture>
-          </div>
+  <div class="modal modal--3" data-target="three">
+    <div class="modal__text">
+      <div class="modal__section1">
+        <h2 class="modal__title">LOFT МЕБЕЛЬ</h2>
+        <p class="modal__descr">Интернет-магазин домашней мебели</p>
+      </div>
+      <div class="modal__section2">
+        <h3 class="modal__stack">Технологии</h3>
+        <div class="modal__descr">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-wordpress"></i>
+          <i class="fa-brands fa-sass"></i>
+          <i class="fa-brands fa-gulp"></i>
+          <i class="fa-brands fa-npm"></i>
+          <i class="fa-brands fa-figma"></i>
         </div>
-      </div> 
+      </div>
     </div>
+    <div class="modal__img">
+      <picture>
+        <source srcset="img/popup-desck3.png" type="image/webp" />
+        <img class="modal__img-desck" src="img/popup-desck3.png" alt="" />
+      </picture>
+
+      <picture>
+        <source srcset="img/popup-mobile3.png" type="image/webp" />
+        <img class="modal__img-mobile" src="img/popup-mobile3.png" alt="" />
+      </picture>
+    </div>
+  </div>
+</div>
+
 
     <!-- JavaScript -->
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js?1"></script>
   </body>
 </html>

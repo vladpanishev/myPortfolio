@@ -1,50 +1,38 @@
-.popup {
+.modal-overlay {
   position: fixed;
-  top: 0;
   left: 0;
-
-  width: 100%;
-  height: 100%;
-
+  top: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
   visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
-  &:target {
+  transition: all 0.2s;
+  &--visible {
+    opacity: 1;
     visibility: visible;
-    .popup__content {
-      transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
-      transition: 0.4s all;
-    }
+    transition: all 0.2s;
   }
+}
 
-  &__body {
-    display: flex;
-    min-height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 
-  &__area {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+  background-color: $grey-color;
+  color: $black-color;
 
-  &__content {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-
-    background-color: $grey-color;
-    color: $black-color;
-
-    transition: 0s all;
-    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  display: none;
+  &--visible {
+    display: block;
   }
 
   &__text {
@@ -112,22 +100,11 @@
       box-shadow: 0 0 3px rgb(0 0 0 / 40%), 0 3px 6px rgb(0 0 0 / 43%);
     }
   }
-
-  &__close {
-    position: absolute;
-    top: -5px;
-    right: 6px;
-    font-size: 27px;
-    color: $black-color;
-    &:hover {
-      color: $black-color;
-    }
-  }
 }
 
 // @media
 @include laptop {
-  .popup {
+  .modal {
     &__img {
       height: 350px;
       &-desck {
@@ -164,7 +141,7 @@
 }
 
 @include tablet {
-  .popup {
+  .modal {
     &__img {
       height: 260px;
       &-desck {
@@ -200,7 +177,7 @@
 }
 
 @include mobile {
-  .popup {
+  .modal {
     &__text {
       flex-direction: column;
       margin-bottom: 0.7em;
